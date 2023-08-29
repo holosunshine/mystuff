@@ -3,7 +3,7 @@
 .lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease;}
 .lexisfirma:before {top:-10px; left:-10px; width: 379px; height: 199px; border-left: 1px solid #cccccc33;}
 .lexisfirma:after {bottom:-10px; right:-10px; width: 379px; height: 199px; border-right: 1px solid #cccccc33;}
-.lexisfirma * {box-sizing: content-box!important;}
+.lexisfirma * {box-sizing: content-box!important; cursor: default;}
 .lexisfirma br {display: none!important;}
 .lexisfirma .lxfq1, .lexisfirma .lxfq2 {height: 21px; position: absolute; z-index: 2; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 7px; width: 379px; color: #aaa; font-size: 8px; line-height: 100%; font-family: 'Martian Mono'; text-transform: uppercase;}
 .lexisfirma .lxfq1>b, .lexisfirma .lxfq2>b {font-weight: 800; color: #fff; padding: 2px 1px; position: relative;}
@@ -26,7 +26,8 @@
 .lexisfirma .lxfbox .lxfbc1>b>u {text-decoration: none; background: var(--accent); padding: 1px 4px; border: 1px solid #cccccc1A;}
 .lexisfirma .lxfbox .lxfbc1>b>i {color: #ccc;}
 .lexisfirma .lxfbox .lxfbc2 {left: 180px; transition: 1s ease; text-align: justify; text-align-last: right; padding: 20px; align-items: flex-end; justify-content: space-between;}
-.lexisfirma .lxfbox .lxfbc2>em {border: 1px solid #cccccc33; display: flex; justify-content: center; align-items: center; text-align: center; font-family: 'EB Garamond'; font-weight:900; font-style: italic; width: 28px; height: 28px; font-size: 18px; color: #fff; text-shadow: 1px 1px 0px #000;}
+.lexisfirma .lxfbox .lxfbc2>em {font-family: 'EB Garamond'; font-weight:900; font-style: italic; color: #fff;}
+.lexisfirma .lxfbox .lxfbc2>em>a {border: 1px solid #cccccc33; display: flex; justify-content: center; align-items: center; text-align: center; width: 28px; height: 28px; font-size: 18px; color: #fff; text-decoration: none; text-shadow: 1px 1px 0px #000; cursor: crosshair;}
 .lexisfirma .lxfbox .lxfbc2>em:before {content: ""; position: absolute; left: -140px; top: 35px; border-top: 1px solid #cccccc33; border-left: 1px solid #cccccc33; width: 269px; height: 30px;}
 .lexisfirma .lxfbox .lxfbc2>div {text-transform: lowercase; font-family: 'EB Garamond'; font-size:11px; line-height: 160%; color: #fff;}
 .lexisfirma:hover .lxfbox {margin-left: 180px; border-left: 1px solid var(--baccent); border-right: 1px solid transparent;}
