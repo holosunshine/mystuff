@@ -1,9 +1,10 @@
 .lexisfirma {--accent: #58478b; --baccent: #5E526E;}
+.lexisfirma:hover {--accent: #07555e; --baccent: #32474A;}
 .lexisfirma {margin: 0 auto; width: 360px; height: 180px; position: relative; box-sizing: content-box!important; border: 10px solid transparent; outline: 1px solid #0f0f0f; outline-offset: -10px; letter-spacing: 1px;}
-.lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease;}
-.lexisfirma:before {top:-10px; left:-10px; width: 379px; height: 199px; border-left: 1px solid #cccccc33;}
-.lexisfirma:after {bottom:-10px; right:-10px; width: 379px; height: 199px; border-right: 1px solid #cccccc33;}
-.lexisfirma * {box-sizing: content-box!important; cursor: default;}
+.lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease; width: 379px; height: 199px;}
+.lexisfirma:before {top:-10px; left:-10px; border-left: 1px solid #cccccc33;}
+.lexisfirma:after {bottom:-10px; right:-10px; border-right: 1px solid #cccccc33;}
+.lexisfirma * {box-sizing: content-box!important; cursor: default; transition: 0.7s ease;}
 .lexisfirma br {display: none!important;}
 .lexisfirma .lxfq1, .lexisfirma .lxfq2 {height: 21px; position: absolute; z-index: 2; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 7px; width: 379px; color: #aaa; font-size: 8px; line-height: 100%; font-family: 'Martian Mono'; text-transform: uppercase;}
 .lexisfirma .lxfq1>b, .lexisfirma .lxfq2>b {font-weight: 800; color: #fff; padding: 2px 1px; position: relative;}
@@ -13,6 +14,7 @@
 .lexisfirma .lxfq2 {right: -9px; bottom: -20px; justify-content: flex-end; text-align: right;}
 .lexisfirma .lxfq1:before, .lexisfirma .lxfq2:after {content: ""; height: 1px; width: 20px; background: #cccccc33;}
 .lexisfirma .lxfq2:before, .lexisfirma .lxfq1:after {content: ""; height: 1px; flex: 1; background: #cccccc33;}
+.lexisfirma:hover .lxfq1:before, .lexisfirma:hover .lxfq2:after {width: 40px;}
 .lexisfirma .lxfi1, .lexisfirma .lxfi2 {position: absolute; z-index: 0; top: 0px; width: 180px; height:180px;}
 .lexisfirma .lxfi1 {left: 0px; filter: brightness(0.4);}
 .lexisfirma .lxfi2 {right: 0px; filter: brightness(0.7);}
