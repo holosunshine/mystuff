@@ -1,5 +1,5 @@
-.lexisfirma {--accent: #58478b; --baccent: #5E526E;}
-.lexisfirma:hover {--accent: #07555e; --baccent: #32474A;}
+.lexisfirma {--accent: #07555e; --baccent: #32474A;}
+.lexisfirma:hover {--accent: #58478b; --baccent: #5E526E;}
 .lexisfirma {margin: 0 auto; width: 360px; height: 180px; position: relative; box-sizing: content-box!important; border: 10px solid transparent; outline: 1px solid #0f0f0f; outline-offset: -10px; letter-spacing: 1px;}
 .lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease; width: 379px; height: 199px;}
 .lexisfirma:before {top:-10px; left:-10px; border-left: 1px solid #cccccc33;}
