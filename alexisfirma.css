@@ -3,11 +3,11 @@
 .lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease; width: 379px; height: 199px;}
 .lexisfirma:before {top:-10px; left:-10px; border-left: 1px solid #cccccc33;}
 .lexisfirma:after {bottom:-10px; right:-10px; border-right: 1px solid #cccccc33;}
-.lexisfirma * {box-sizing: content-box!important; cursor: default; transition: 0.7s ease;}
+.lexisfirma * {box-sizing: content-box!important; cursor: default;}
 .lexisfirma br {display: none!important;}
 .lexisfirma .lxfq1, .lexisfirma .lxfq2 {height: 21px; position: absolute; z-index: 2; display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; gap: 7px; width: 379px; color: #aaa; font-size: 8px; line-height: 100%; font-family: 'Martian Mono'; text-transform: uppercase;}
 .lexisfirma .lxfq1>b, .lexisfirma .lxfq2>b {font-weight: 800; color: #fff; padding: 2px 1px; position: relative;}
-.lexisfirma .lxfq1>b:before, .lexisfirma .lxfq2>b:before {content: ""; width: 100%; left: 0px; bottom: 1px; height: 4px; position: absolute; background: var(--accent);}
+.lexisfirma .lxfq1>b:before, .lexisfirma .lxfq2>b:before {content: ""; width: 100%; left: 0px; bottom: 1px; height: 4px; position: absolute; background: var(--accent); transition: 0.7s ease;}
 .lexisfirma .lxfq1>b>span, .lexisfirma .lxfq2>b>span {position: relative; z-index: 1;}
 .lexisfirma .lxfq1 {left: -9px; top: -20px; justify-content: flex-start; text-align: left;}
 .lexisfirma .lxfq2 {right: -9px; bottom: -20px; justify-content: flex-end; text-align: right;}
@@ -24,7 +24,7 @@
 .lexisfirma .lxfbox .lxfbc1>em {position: absolute; left: -47px; bottom: -62px; border: 1px solid #cccccc33; border-radius: 100%; padding: 7px; font-size: 120px; width: 160px; height: 160px; display: flex; justify-content: center; align-items: center; z-index: 0;}
 .lexisfirma .lxfbox .lxfbc1>em:before {color: #ccc; opacity: 0.1;}
 .lexisfirma .lxfbox .lxfbc1>b {position: relative; z-index: 1; text-transform: uppercase; font-family: 'EB Garamond'; color: #fff; font-weight: 600; font-size: 11px; line-height: 180%; text-shadow: 1px 1px 0px #00000066;}
-.lexisfirma .lxfbox .lxfbc1>b>u {text-decoration: none; background: var(--accent); padding: 0px 4px; border: 1px solid #cccccc1A;}
+.lexisfirma .lxfbox .lxfbc1>b>u {text-decoration: none; background: var(--accent); padding: 0px 4px; border: 1px solid #cccccc1A; transition: 0.7s ease;}
 .lexisfirma .lxfbox .lxfbc1>b>i {color: #ccc;}
 .lexisfirma .lxfbox .lxfbc2 {left: 180px; transition: 1s ease; text-align: justify; text-align-last: right; padding: 20px; align-items: flex-end; justify-content: space-between;}
 .lexisfirma .lxfbox .lxfbc2>em {font-family: 'EB Garamond'; font-weight:900; font-style: italic; color: #fff;}
