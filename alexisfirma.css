@@ -1,5 +1,4 @@
 .lexisfirma {--accent: #07555e; --baccent: #32474A;}
-.lexisfirma:hover {--accent: #58478b; --baccent: #5E526E;}
 .lexisfirma {margin: 0 auto; width: 360px; height: 180px; position: relative; box-sizing: content-box!important; border: 10px solid transparent; outline: 1px solid #0f0f0f; outline-offset: -10px; letter-spacing: 1px;}
 .lexisfirma:before, .lexisfirma:after {content: ""; position: absolute; z-index: 1; transition: 0.7s ease; width: 379px; height: 199px;}
 .lexisfirma:before {top:-10px; left:-10px; border-left: 1px solid #cccccc33;}
@@ -15,7 +14,6 @@
 .lexisfirma .lxfq1:before, .lexisfirma .lxfq2:after, .lexisfirma .lxfq2:before, .lexisfirma .lxfq1:after {content: ""; height: 1px;  background: #cccccc33;}
 .lexisfirma .lxfq1:before, .lexisfirma .lxfq2:after {width: 20px; transition: 0.7s ease;}
 .lexisfirma .lxfq2:before, .lexisfirma .lxfq1:after {flex: 1;}
-.lexisfirma:hover .lxfq1:before, .lexisfirma:hover .lxfq2:after {width: 40px;}
 .lexisfirma .lxfi1, .lexisfirma .lxfi2 {position: absolute; z-index: 0; top: 0px; width: 180px; height:180px;}
 .lexisfirma .lxfi1 {left: 0px; filter: brightness(0.4);}
 .lexisfirma .lxfi2 {right: 0px; filter: brightness(0.7);}
@@ -26,13 +24,15 @@
 .lexisfirma .lxfbox .lxfbc1>em {position: absolute; left: -47px; bottom: -62px; border: 1px solid #cccccc33; border-radius: 100%; padding: 7px; font-size: 120px; width: 160px; height: 160px; display: flex; justify-content: center; align-items: center; z-index: 0;}
 .lexisfirma .lxfbox .lxfbc1>em:before {color: #ccc; opacity: 0.1;}
 .lexisfirma .lxfbox .lxfbc1>b {position: relative; z-index: 1; text-transform: uppercase; font-family: 'EB Garamond'; color: #fff; font-weight: 600; font-size: 11px; line-height: 180%; text-shadow: 1px 1px 0px #00000066;}
-.lexisfirma .lxfbox .lxfbc1>b>u {text-decoration: none; background: var(--accent); padding: 1px 4px; border: 1px solid #cccccc1A;}
+.lexisfirma .lxfbox .lxfbc1>b>u {text-decoration: none; background: var(--accent); padding: 0px 4px; border: 1px solid #cccccc1A;}
 .lexisfirma .lxfbox .lxfbc1>b>i {color: #ccc;}
 .lexisfirma .lxfbox .lxfbc2 {left: 180px; transition: 1s ease; text-align: justify; text-align-last: right; padding: 20px; align-items: flex-end; justify-content: space-between;}
 .lexisfirma .lxfbox .lxfbc2>em {font-family: 'EB Garamond'; font-weight:900; font-style: italic; color: #fff;}
 .lexisfirma .lxfbox .lxfbc2>em>a {border: 1px solid #cccccc33; display: flex; justify-content: center; align-items: center; text-align: center; width: 28px; height: 28px; font-size: 18px; color: #fff; text-decoration: none; text-shadow: 1px 1px 0px #000; cursor: crosshair;}
 .lexisfirma .lxfbox .lxfbc2>em:before {content: ""; position: absolute; left: -140px; top: 35px; border-top: 1px solid #cccccc33; border-left: 1px solid #cccccc33; width: 269px; height: 30px;}
 .lexisfirma .lxfbox .lxfbc2>div {text-transform: lowercase; font-family: 'EB Garamond'; font-size:11px; line-height: 160%; color: #fff;}
+.lexisfirma:hover {--accent: #58478b; --baccent: #5E526E;}
+.lexisfirma:hover .lxfq1:before, .lexisfirma:hover .lxfq2:after {width: 40px;}
 .lexisfirma:hover .lxfbox {margin-left: 180px; border-left: 1px solid var(--baccent); border-right: 1px solid transparent;}
 .lexisfirma:hover .lxfbox:before {left: -180px;}
 .lexisfirma:hover .lxfbox .lxfbc1 {left: -180px;}
