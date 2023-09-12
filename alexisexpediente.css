@@ -70,3 +70,7 @@
 .alexiscfacts>span>em:after {content: ""; width: 70%; height: 70%; position: absolute; z-index: 0; background: #58478b; box-sizing: border-box; opacity: 0.3;}
 .alexiscfacts>span:first-of-type {margin-top: 0px;}
 .alexiscfacts>span:last-of-type {margin-bottom: 0px;}
+.f-historia {line-height: 21px;}
+.f-historia>u, .alexisceter>span>u, .alexiscfacts>span>u {text-decoration: underline 1px solid #58478b; text-underline-offset: 2px; text-transform: uppercase; font: 800 11px 'Noto Sans'; color: #ccc;}
+.f-historia>strong, .alexisceter>span>strong, .alexiscfacts>span>strong {color: #58478b; text-transform: uppercase; font: 900 10px 'Martian Mono';}
+.f-historia>i, .alexisceter>span>i, .alexiscfacts>span>i {color: #aaa;}
