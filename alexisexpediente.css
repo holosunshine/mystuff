@@ -35,6 +35,7 @@
 .alexiscfam>span:nth-of-type(even)>i {right: -12px;}
 .alexiscfam>span.gea>i {color: var(--gea);}
 .alexiscfam>span.terra>i {color: var(--terra);}
+.alexiscfam>span.npc>i {color: var(--npc);}
 .alexiscfam>span * {position: relative; z-index: 1;}
 .alexiscfam>span>b {text-transform: uppercase; font: 700 12px 'EB Garamond'; font-style: italic; color: #ccc; letter-spacing: 0.5px; line-height: 100%;}
 .alexiscfam>span:nth-of-type(odd)>b {text-align: left;}
