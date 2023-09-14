@@ -17,7 +17,7 @@
 .lexisfirma .lxfi1, .lexisfirma .lxfi2 {position: absolute; z-index: 0; top: 0px; width: 180px; height:180px;}
 .lexisfirma .lxfi1 {left: 0px; filter: brightness(0.4);}
 .lexisfirma .lxfi2 {right: 0px; filter: brightness(0.7);}
-.lexisfirma .lxfbox {position: absolute; top: 0px; left: -1px; width: 180px; height: 180px; z-index: 2; overflow: hidden; transition: 1s ease; border-right: 1px solid var(--baccent); border-left: 1px solid transparent;}
+.lexisfirma .lxfbox {position: absolute; top: 0px; left: 0px; width: 180px; height: 180px; z-index: 2; overflow: hidden; transition: 1s ease; border-right: 1px solid var(--baccent); border-left: 0px solid transparent;}
 .lexisfirma .lxfbox:before {content: ""; position: absolute; left: 0px; width: 360px; height: 180px; background-image: url(https://i.imgur.com/QRN4Lx7.png); background-size: cover; background-position: left; background-color: var(--accent); background-blend-mode: multiply; transition: 1s ease; filter: brightness(0.7) grayscale(0.3);}
 .lexisfirma .lxfbox .lxfbc1, .lexisfirma .lxfbox .lxfbc2 {position: absolute; width: 180px; height: 180px; top: 0px; display: flex; flex-direction: column; box-sizing: border-box!important;}
 .lexisfirma .lxfbox .lxfbc1 {left: 0px; transition: 1s ease; align-items: flex-start; justify-content: flex-end; padding:14px; text-align: left;}
@@ -33,7 +33,7 @@
 .lexisfirma .lxfbox .lxfbc2>div {text-transform: lowercase; font-family: 'EB Garamond'; font-size:11px; line-height: 160%; color: #fff;}
 .lexisfirma:hover {--accent: #58478b; --baccent: #5E526E;}
 .lexisfirma:hover .lxfq1:before, .lexisfirma:hover .lxfq2:after {width: 40px;}
-.lexisfirma:hover .lxfbox {margin-left: 180px; border-left: 1px solid var(--baccent); border-right: 1px solid transparent;}
+.lexisfirma:hover .lxfbox {margin-left: 180px; border-left: 1px solid var(--baccent); border-right: 0px solid transparent;}
 .lexisfirma:hover .lxfbox:before {left: -180px;}
 .lexisfirma:hover .lxfbox .lxfbc1 {left: -180px;}
 .lexisfirma:hover .lxfbox .lxfbc2 {left: 0px;}
