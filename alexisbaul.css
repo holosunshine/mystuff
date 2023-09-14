@@ -12,7 +12,7 @@
 .albauslinks:after {content: ""; position: absolute; width: 1px; height: 20px; background: #cccccc26; top: 14px; left: 20px; z-index: 3;}
 .albaustext {width: 330px; height: 135px; background: #000; box-sizing: border-box; position: relative; z-index: 2; overflow: hidden; padding: 15px 20px 20px 60px;}
 .albaustext:before {content: ""; position: absolute; width: 1px; height: 38px; background: #cccccc26; top: 0px; left: 20px; z-index: 3;}
-.albaustext>i {position: absolute; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; border: 1px solid #cccccc26; border-radius: 100%; left: -50px; bottom: -45px;}
+.albaustext>i {position: absolute; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; border: 1px solid #cccccc26; border-radius: 100%; left: -50px; bottom: -45px; font-family: "Font Awesome 6 Sharp";}
 .albaustext>i:before {font-size: 80px; color: var(--accent); transition: 0.7s ease; opacity: 0.3;}
 .albaustext>span {text-transform: lowercase; text-align: justify; text-align-last: justify; display: block; font: normal 13px 'EB Garamond'; color: #ccc; line-height: 165%; letter-spacing: 0.5px;}
 .albaustext>span>b {display: block; text-transform: uppercase; font-size: 18px; font-weight: 900; color: #fff; margin-bottom: 5px; text-align-last: right;}
