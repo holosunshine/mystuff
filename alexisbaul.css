@@ -1,0 +1,38 @@
+.alexisbau {background: #080808; margin: 20px auto; width: 900px; height: 465px; outline: 1px solid #cccccc33; outline-offset: 10px; display: flex; flex-direction: row; align-items: center; --accent: var(--terra); gap: 21px;}
+.alexisbau:hover {--accent: #58478b;}
+.alexisbau br {display:none!important;}
+.albauside {height: 465px; width: 330px; position: relative;}
+.albauside:after {content: ""; position: absolute; height: 485px; width: 1px; background: #cccccc33; border-left: 10px solid #000; border-right: 10px solid #000; right: -21px; top: -10px;}
+.albausimg {width: 330px; height: 330px; background-image: url(https://i.imgur.com/zzBv8S4.png); position: relative; overflow: hidden; z-index: 0;}
+.albausimg:before {content: ""; position: absolute; height: 100%; width: 100%; z-index: 0; inset: 0; background: linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);}
+.albauslinks {text-transform: uppercase; position: absolute; z-index: 1; bottom: 140px; width: 330px; display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding: 0px 20px; box-sizing: border-box;}
+.albauslinks:before {content: ""; position: relative; flex: 1; height: 1px; background: #cccccc26;}
+.albauslinks>a {border: 1px solid #cccccc26; text-decoration: none; color: #fff; font: 800 10px 'EB Garamond'; line-height: 100%; font-style: italic; cursor: crosshair; display: flex; justify-content: center; align-items: center; text-align: center; height: 25px; width: 28px; transition: 0.7s ease;}
+.albauslinks>a:hover {color: var(--accent); border-color: #cccccc73;}
+.albauslinks:after {content: ""; position: absolute; width: 1px; height: 20px; background: #cccccc26; top: 14px; left: 20px; z-index: 3;}
+.albaustext {width: 330px; height: 135px; background: #000; box-sizing: border-box; position: relative; z-index: 2; overflow: hidden; padding: 15px 20px 20px 60px;}
+.albaustext:before {content: ""; position: absolute; width: 1px; height: 38px; background: #cccccc26; top: 0px; left: 20px; z-index: 3;}
+.albaustext>i {position: absolute; width: 140px; height: 140px; display: flex; align-items: center; justify-content: center; border: 1px solid #cccccc26; border-radius: 100%; left: -50px; bottom: -45px;}
+.albaustext>i:before {font-size: 80px; color: var(--accent); transition: 0.7s ease; opacity: 0.3;}
+.albaustext>span {text-transform: lowercase; text-align: justify; text-align-last: justify; display: block; font: normal 13px 'EB Garamond'; color: #ccc; line-height: 165%; letter-spacing: 0.5px;}
+.albaustext>span>b {display: block; text-transform: uppercase; font-size: 18px; font-weight: 900; color: #fff; margin-bottom: 5px; text-align-last: right;}
+.albaustext>span>b>s {color: #cccccc33; text-decoration: line-through 1px solid var(--accent); transition: 0.7s ease;}
+.albauscont {width: 550px; height: 465px; display: flex; flex-direction: row; flex-wrap: wrap; box-sizing: border-box; padding: 30px; gap: 30px;}
+.albauscinfo {display: flex; flex-direction: column; flex: 1 0 40%; align-items: center; justify-content: space-between; height: 230px; overflow: hidden;}
+.albauscinfo>span {width: 100%; display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.5px;}
+.albauscinfo>span>b {border: 1px solid #cccccc26; font: 900 10px 'EB Garamond'; line-height: 100%; text-transform: uppercase; font-style: italic; color: #fff; height: 20px; padding: 0px 7px; display: flex; align-items: center; justify-content: flex-start;}
+.albauscinfo>span>em {display: flex; justify-content: flex-end; align-items: center; position: relative; flex: 1; font: 600 11px 'EB Garamond'; text-transform: uppercase; color: #ccc;}
+.albauscinfo>span>em:before {content: ""; flex: 1; height: 1px; background: #cccccc26; margin-right: 7px;}
+.albauscfacts {flex: 1 0 40%; height: 230px; overflow: auto; counter-reset: alexisbaufacts; padding-right: 12px; font: 400 12px 'Noto Sans'; line-height: 160%; color: #aaa;}
+.albauscfacts::-webkit-scrollbar {width: 1px; height: 1px;}
+.albauscfacts::-webkit-scrollbar-thumb {background: #cccccc26;}
+.albauscfacts::-webkit-scrollbar-track {background: transparent;}
+.albauscfacts::-webkit-scrollbar-corner {background: transparent;}
+.albauscfacts>b {counter-increment: alexisbaufacts; background: var(--accent); color: #fff; font: 800 8px 'Martian Mono'; padding: 2px 3px; transition: 0.6s ease;}
+.albauscfacts>b:before {content: '0' counter(alexisbaufacts)'.';}
+.albauscsongs {flex: 1 0 100%; align-self: stretch; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center;}
+.albauscsongs>span {flex: 1 0 25%; display: flex; flex-direction: column; text-align: left; justify-content: center; align-items: flex-start; border: 1px solid #cccccc26; align-self: stretch; padding: 15px 20px; box-sizing: border-box; position: relative; overflow: hidden; background: #000; gap: 3px;}
+.albauscsongs>span:before {content: "\f001"; font: 300 90px "Font Awesome 6 Sharp"; position: absolute; z-index: 0; color: var(--accent); right: -2px; opacity: 0.5; transition: 0.7s ease;}
+.albauscsongs>span * {position: relative; z-index: 1; text-shadow: 1px 1px 1px #000; text-transform: uppercase;}
+.albauscsongs>span>b {color: #fff; font: 900 13px 'Noto Sans'; line-height: 100%;}
+.albauscsongs>span>em {color: #aaa; font: bold 9px 'Martian Mono'; line-height: 100%;}
