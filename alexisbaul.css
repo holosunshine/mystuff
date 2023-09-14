@@ -25,7 +25,7 @@
 .albauscinfo>span>em:before {content: ""; flex: 1; height: 1px; background: #cccccc26; margin-right: 7px;}
 .albauscfacts {flex: 1 0 40%; height: 230px; overflow: auto; counter-reset: alexisbaufacts; padding-right: 12px; font: 400 12px 'Noto Sans'; line-height: 160%; color: #aaa; text-align: justify;}
 .albauscfacts::-webkit-scrollbar {width: 1px; height: 1px;}
-.albauscfacts::-webkit-scrollbar-thumb {background: #cccccc26;}
+.albauscfacts::-webkit-scrollbar-thumb {background: #cccccc26; border: none!important;}
 .albauscfacts::-webkit-scrollbar-track {background: transparent;}
 .albauscfacts::-webkit-scrollbar-corner {background: transparent;}
 .albauscfacts>b {counter-increment: alexisbaufacts; background: var(--accent); color: #fff; font: 800 8px 'Martian Mono'; padding: 2px 3px; transition: 0.6s ease;}
