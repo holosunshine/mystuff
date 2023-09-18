@@ -25,10 +25,11 @@
 .alrccinfo:before {content: ""; position: absolute; height: 100%; width: 100%; z-index: 0; left: 0px; bottom: 0px; background: linear-gradient(0deg,rgba(0,0,0,1) 7%,rgba(0,0,0,0) 100%);}
 .alrccinfo * {position: relative; text-transform: uppercase;}
 .alrccinfo>a {font: 900 14px 'Noto Sans'; text-decoration: underline 1px solid var(--acentito); text-underline-offset: 2px; line-height: 130%; color: #fff; cursor: crosshair;}
+.alrccinfo>a:hover {text-decoration: underline 1px solid var(--acentito);}
 .alrccinfo>em {font: 800 9px 'Martian Mono'; letter-spacing: 0.7px; color: #aaa; line-height: 100%;}
 .alrccdesc {position: absolute; width: calc(100% - 14px); height: 0px; bottom: 7px; overflow: auto; border: 20px solid transparent; background: #000; border-right-width: 10px; border-top-width: 0px; border-bottom-width: 0px; padding-right: 10px; color: #858585; font: normal 13px 'Noto Sans'; line-height: 20px; text-align: justify; box-sizing: border-box; transition: 1s ease; transform: translateY(0px); transition-delay: 0s;}
 .alrcchar:hover .alrccdesc {height: 180px; border-top-width: 20px; border-bottom-width: 20px; transition-delay: 1s;}
-.alrccdesc>strong {font: 800 9px 'Martian Mono'; text-transform: uppercase; color: var(--acentito);}
+.alrccdesc>strong {font: 800 9px 'Martian Mono'; text-transform: uppercase; color: var(--acentito); line-height: 20px;}
 .alrccdesc>i {color: #ccc;}
-.alrccdesc>u {text-decoration: underline 1px solid var(--acentito); text-underline-offset: 2px; text-transform: uppercase; font: 800 11px 'EB Garamond'; color: #ccc;}
-.alrccdesc>strike, .alrccdesc>s {text-decoration: line-through 1px solid var(--acentito); text-transform: uppercase; font: 800 11px 'Noto Sans'; color: #ccc;}
+.alrccdesc>u {text-decoration: underline 1px solid var(--acentito); text-underline-offset: 2px; text-transform: uppercase; font: 800 11px 'EB Garamond'; color: #ccc; line-height: 20px;}
+.alrccdesc>strike, .alrccdesc>s {text-decoration: line-through 1px solid var(--acentito); text-transform: uppercase; font: 800 11px 'Noto Sans'; color: #ccc; line-height: 20px;}
