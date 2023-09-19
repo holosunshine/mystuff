@@ -14,7 +14,7 @@
 .alcrc.crclosed:after {left: 287px;}
 .alcrc.cropen:after {left: 594px;}
 .alcrc>span {display: flex; width: 100%; justify-content: space-between; align-items: center; text-transform: uppercase;}
-.alcrc>span>em {border: 1px solid #cccccc26; line-height: 100%; height: 20px; padding: 0px 6px; display: flex; justify-content: center; align-items: center; font: 900 11px 'EB Garamond'; color: #fff; font-style: italic;}
+.alcrc>span>em {border: 1px solid #cccccc26; line-height: 100%; height: 20px; padding: 0px 6px; display: flex; justify-content: center; align-items: center; font: 900 10px 'EB Garamond'; color: #fff; font-style: italic;}
 .alcrc>span>b {font: 600 13px 'EB Garamond'; color: #ccc; text-align: right; flex: 1; display: flex; justify-content: flex-end; align-items: center; line-height: 100%;}
 .alcrc>span>b:before {content: ""; height: 1px; flex: 1; background: #cccccc26; margin-right: 7px;}
 .alcrclist {display: flex; flex-direction: column; height: 300px; overflow: auto; padding-right: 10px; gap: 12px; margin-right: -4px;}
@@ -22,12 +22,12 @@
 .alcrclist::-webkit-scrollbar-thumb {background: #cccccc26; border: none!important;}
 .alcrclist::-webkit-scrollbar-track {background: transparent;}
 .alcrclist::-webkit-scrollbar-corner {background: transparent;}
-.alcrclist>span {border: 1px solid #cccccc26; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; position: relative; min-height: 66px; padding: 14px 20px; overflow: hidden; box-sizing: border-box;}
+.alcrclist>span {border: 1px solid #cccccc26; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; position: relative; min-height: 66px; padding: 14px; overflow: hidden; box-sizing: border-box;}
 .alcrclist>span>i {position: absolute; z-index: 0; left: -7px;}
 .alcrclist>span>i:after {content: ""; position: relative; z-index: 1; font: 300 75px 'Font Awesome 6 Pro'; color: var(--accent); opacity: 0.2; transition: 0.7s ease;}
 .alcrclist>span.group>i:after{content: "\f500";}
 .alcrclist>span.priv>i:after{content: "\f007";}
 .alcrclist>span>b {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; text-transform: uppercase; position: relative; z-index: 1; gap: 3px;}
-.alcrclist>span>b>a {text-decoration: underline 1px solid var(--accent); text-underline-offset: 2px; color: #fff; font: 900 12px 'Noto Sans'; line-height: 120%; cursor: crosshair;}
-.alcrclist>span>b>em {font: bold 9px 'Martian Mono'; line-height: 100%; font-style: normal;}
+.alcrclist>span>b>a {text-decoration: underline 1px solid var(--accent)!important; text-underline-offset: 2px; color: #fff; font: 900 12px 'Noto Sans'; line-height: 120%; cursor: crosshair;}
+.alcrclist>span>b>em {font: bold 9px 'Martian Mono'; line-height: 110%; font-style: normal;}
 .alcrclist>span>b>em>b {color: var(--accent); font-weight: 900; transition: 0.7s ease;}
