@@ -20,14 +20,14 @@
 .alrccimg {width: calc(100% - 14px); height: calc(100% - 14px); position: absolute; z-index: 0; background-size: cover; background-position: center; background-blend-mode: multiply; transition: 0.7s ease; box-sizing: border-box; transition-delay: 1s;}
 .alrccimg:before {content: ""; position: absolute; height: 100%; width: 100%; z-index: 0; inset: 0; background: linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%);}
 .alrcchar:hover .alrccimg {background-color: var(--acentito); transition-delay: 0s;}
-.alrccinfo {position: absolute; z-index: 1; width: calc(100% - 14px); bottom: 7px; left: 7px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; box-sizing: border-box; padding: 25px; text-align: right; gap: 2px; transition: 1s ease; transform: translateY(0px); transition-delay: 0s; overflow: hidden; box-sizing: border-box;}
+.alrccinfo {position: absolute; z-index: 1; width: calc(100% - 14px); bottom: 7px; left: 7px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; box-sizing: border-box; padding: 25px; text-align: right; gap: 2px; transition: 0.7s ease; transform: translateY(0px); transition-delay: 0s; overflow: hidden; box-sizing: border-box;}
 .alrcchar:hover .alrccinfo {transform: translateY(-170px); transition-delay: 1s;}
 .alrccinfo:before {content: ""; position: absolute; height: 100%; width: 100%; z-index: 0; left: 0px; bottom: 0px; background: linear-gradient(0deg,rgba(0,0,0,1) 7%,rgba(0,0,0,0) 100%);}
 .alrccinfo * {position: relative; text-transform: uppercase;}
-.alrccinfo>a {font: 900 14px 'Noto Sans'; text-decoration: underline 1px solid var(--acentito); text-underline-offset: 2px; line-height: 130%; color: #fff; cursor: crosshair;}
+.alrccinfo>a {font: 900 14px 'Noto Sans'; text-decoration: underline 1px solid var(--acentito)!important; text-underline-offset: 2px; line-height: 130%; color: #fff; cursor: crosshair;}
 .alrccinfo>a:hover {text-decoration: underline 1px solid var(--acentito);}
 .alrccinfo>em {font: 800 9px 'Martian Mono'; letter-spacing: 0.7px; color: #aaa; line-height: 100%;}
-.alrccdesc {position: absolute; width: calc(100% - 14px); height: 0px; bottom: 7px; overflow: auto; border: 20px solid transparent; background: #000; border-right-width: 10px; border-top-width: 0px; border-bottom-width: 0px; padding-right: 10px; color: #858585; font: normal 13px 'Noto Sans'; line-height: 20px; text-align: justify; box-sizing: border-box; transition: 1s ease; transform: translateY(0px); transition-delay: 0s;}
+.alrccdesc {position: absolute; width: calc(100% - 14px); height: 0px; bottom: 7px; overflow: auto; border: 20px solid transparent; background: #000; border-right-width: 10px; border-top-width: 0px; border-bottom-width: 0px; padding-right: 10px; color: #858585; font: normal 13px 'Noto Sans'; line-height: 20px; text-align: justify; box-sizing: border-box; transition: 0.7s ease; transform: translateY(0px); transition-delay: 0s;}
 .alrcchar:hover .alrccdesc {height: 180px; border-top-width: 20px; border-bottom-width: 20px; transition-delay: 1s;}
 .alrccdesc>strong {font: 800 9px 'Martian Mono'; text-transform: uppercase; color: var(--acentito); line-height: 20px;}
 .alrccdesc>i {color: #ccc;}
