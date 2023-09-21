@@ -55,6 +55,7 @@
 .alrpgchhito {width: 100%; box-sizing: border-box; border: 1px solid #cccccc26; min-height: 54px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px; position: relative; overflow: hidden;}
 .alrpgchhito.hitothree, .alrpgchhito.hitofour {min-height: 68px;}
 .alrpgchhito>span {text-transform: uppercase; font: 600 11px 'Noto Sans'; flex: 1; line-height: 110%; max-width: 160px; color: #ccc;}
+.alrpgchhito>span>a {font-style: italic; color: var(--accent); font-weight: 800; transition: 0.7s ease;}
 .alrpgchhito>b {display: flex; flex-direction: column; flex-wrap: wrap; gap: 3px; justify-content: center;}
 .alrpgchhito.hitofour>b {height: 40px;}
 .alrpgchhito>b>em {font: 800 9px 'Martian Mono'; border: 1px solid #cccccc26; line-height: 100%; padding: 2px 4px; color: #858585; background: #000; transition: 0.7s ease;}
