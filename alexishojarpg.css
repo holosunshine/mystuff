@@ -53,7 +53,12 @@
 .alrpgchtitle>b:before {content: ""; flex: 1; height: 1px; background: #cccccc26; margin-right: 7px;}
 .alrpgchhito {min-height: 54px!important;}
 .alrpgchhito {width: 100%; box-sizing: border-box; border: 1px solid #cccccc26; min-height: 54px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px; position: relative; overflow: hidden;}
+.alrpgchhito:before {position: absolute; z-index: 0; left: -7px; font: 400 70px 'Font Awesome 6 Pro'; color: var(--accent); opacity: 0.3;}
+.alrpgchhito.hsis:before {content: "\e4dc";}
+.alrpgchhito.hnar:before {content: "\f5db";}
+.alrpgchhito * {position: relative; z-index: 1;}
 .alrpgchhito.hitothree, .alrpgchhito.hitofour {min-height: 68px;}
+.alrpgchhito.hitothree:before, .alrpgchhito.hitofour:before {font-size: 90px;}
 .alrpgchhito>span {text-transform: uppercase; font: 600 11px 'Noto Sans'; flex: 1; line-height: 110%; max-width: 160px; color: #ccc;}
 .alrpgchhito>span>a {font-style: italic; color: var(--accent); font-weight: 800; transition: 0.7s ease;}
 .alrpgchhito>b {display: flex; flex-direction: column; flex-wrap: wrap; gap: 3px; justify-content: center;}
