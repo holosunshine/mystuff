@@ -1,0 +1,84 @@
+.alexishrpg {background: #080808; margin: 20px auto; width: 900px; height: 465px; outline: 1px solid #cccccc33; outline-offset: 10px; display: flex; flex-direction: column; align-items: center; --accent: var(--terra); gap: 21px; position: relative;}
+.alexishrpg *::-webkit-scrollbar {width: 1px; height: 1px;}
+.alexishrpg *::-webkit-scrollbar-thumb {background: #cccccc26; border: none!important;}
+.alexishrpg *::-webkit-scrollbar-track {background: transparent;}
+.alexishrpg *::-webkit-scrollbar-track {background: transparent;}
+.alexishrpg:before {content: ""; position: absolute; z-index: 0; height: 1px; width: 920px; background: #cccccc33; border-top: 10px solid #000; border-bottom: 10px solid #000; left: -10px; top: 80px;}
+.alexishrpg:hover {--accent: #58478b;}
+.alexishrpg br {display: none!important;}
+.alrpgtop {display: flex; flex-direction: row; justify-content: center; align-items: center; width: 100%; height: 80px; box-sizing: border-box; padding: 25px 30px; background: #000; position: relative; overflow: hidden;}
+.alrpgtop>i {position: absolute; z-index: 3; height: 140px; width: 140px; display: flex; justify-content: center; align-items: center; border-radius: 100%; border: 1px solid #cccccc33; background: #000; box-sizing: border-box;}
+.alrpgtop>i:before {font-size: 60px; color: var(--accent); transition: 0.7s ease; opacity: 0.3;}
+.alrpgtop>b {text-transform: uppercase; text-align: left; font: 800 27px 'EB Garamond'; color: #fff; letter-spacing: 2px; line-height: 100%; flex: 1; position: relative; z-index: 2; display: flex; justify-content: flex-start; align-items: center;}
+.alrpgtop>b:after {content: ""; flex: 1; height: 1px; background: #cccccc33; margin: 0px 14px;}
+.alrpgtop>em {width: 155px; text-align: justify; text-align-last: justify; font: 400 11px 'EB Garamond'; text-transform: lowercase; letter-spacing: 0.7px; color: #ccc; line-height: 150%; position: relative; z-index: 2;}
+.alrpgcont {background: #000; margin: -10px; width: 920px; height: calc(100% - 90px); padding: 10px; box-sizing: border-box; flex: 1; display: grid; grid-template-columns: repeat(6, 132px); grid-template-rows: repeat(4, 75px); grid-column-gap: 21px; grid-row-gap: 21px; grid-template-areas: 'data data stash stash hitos hitos' 'data data stash stash hitos hitos' 'data data skills skills skills iconito' 'stats stats skills skills skills iconito'; position: relative; z-index: 1; }
+.alrpgcinfo {grid-area: data; display: flex; flex-direction: column; background-image: url(https://i.imgur.com/vVJDYa4.png); background-color: var(--accent); background-blend-mode: multiply; box-sizing: border-box; padding: 30px; justify-content: space-between; align-items: flex-end; position: relative; gap: 14px; transition: 0.7s ease;}
+.alrpgcinfo:before {content: ""; position: absolute; z-index: 0; background: linear-gradient(90deg,rgba(0,0,0,0) 0%,rgba(0,0,0,1) 70%); width: 100%; height: 100%; inset: 0;}
+.alrpgcinfo>b {text-transform: uppercase; font: 600 30px 'EB Garamond'; line-height: 90%; color: #fff; letter-spacing: 2px; position: relative; text-align: right; z-index: 1;}
+.alrpgcinfo>b:after {content: ""; display: block; height: 1px; width: 135px; background: #cccccc26; position: absolute; bottom: -14px; right: 0px;}
+.alrpgcinfo>span {display: flex; flex-direction: column; justify-content: space-between;  box-sizing: border-box; text-align: right; position: relative; z-index: 1; border-right: 1px solid #cccccc26; flex: 1; box-sizing: border-box; padding: 20px;}
+.alrpgcinfo>span>em {text-transform: uppercase; color: #aaa; font: 600 10px 'Noto Sans'; display: flex; flex-direction: row-reverse; justify-content: flex-start; align-items: center; gap: 7px; line-height: 100%;}
+.alrpgcinfo>span>em>b {position: relative; font: 600 8px 'Martian Mono'; color: #fff; letter-spacing: 0.7px; padding: 2px 2px;}
+.alrpgcinfo>span>em>b:before {content: ""; width: 100%; left: 0px; bottom: 1px; height: 5px; position: absolute; background: var(--accent); transition: 0.7s ease;}
+.alrpgcinfo>span>em>b * {position: relative; z-index: 1;}
+.alrpgcstats {grid-area: stats; display: flex; flex-wrap: wrap; box-sizing: border-box; background: #080808; gap: 7px; padding: 14px;}
+.alrpgcstats:after {content: ""; width: 304px; height: 1px; bottom: 85px; left: 0px; background: #cccccc33; position: absolute; border-top: 10px solid #000; border-bottom: 10px solid #000;}
+.alrpgcstats:before {content: ""; width: 1px; height: 384px; top: 0px; left: 294px; background: #cccccc33; position: absolute; border-left: 10px solid #000; border-right: 10px solid #000;}
+.alrpgcstats>span {display: flex; flex: 1; justify-content: center; align-items: center; box-sizing: border-box; position: relative; cursor: default;}
+.alrpgcstats>span>b {position: absolute; z-index: 0; font: 900 35px 'Martian Mono'; color: #ccc; opacity: 0.2; line-height: 100%; transition: 0.7s ease;}
+.alrpgcstats>span>u {position: absolute; z-index: 1; font: 700 11px 'Noto Sans'; letter-spacing: 0.7px; color: #fff; text-decoration: underline 1px solid var(--accent); transition: 0.7s; text-underline-offset: 2px; line-height: 120%;}
+.alrpgcstats>span:hover>b {transform: translateY(-3px);}
+.alrpgcstats>span:hover>u {transform: translateY(14px);}
+.alrpgcinven {background: #080808; grid-area: stash; z-index: 2; overflow: auto; border: 14px solid transparent; border-right-width: 7px; padding-right: 7px; box-sizing: border-box; color: #aaa;}
+.alrpgciitem {font: normal 12px 'Noto Sans'; line-height: 146%;}
+.alrpgciitem:not(:first-of-type) {margin-top: 7px;}
+.alrpgciitem>b {text-transform: uppercase; font: 900 11px 'EB Garamond'; color: #fff; text-decoration: underline 1px solid var(--accent); text-underline-offset: 2px; transition: 0.7s ease; letter-spacing: 0.7px;}
+.alrpgciitem:before {content: ""; margin-right: 7px; margin-top: 4px; font: 400 16px 'Font Awesome 6 Pro'; background: var(--accent); color: #fff; border-radius: 3px; transition: 0.7s ease; float: left; width: 29px; height: 29px; display: flex; justify-content: center; align-items: center;}
+.alrpgciitem.itech:before {content: "\f2db";}
+.alrpgciitem.imuni:before {content: "\f7e4";}
+.alrpgciitem.iboti:before {content: "\f479";}
+.alrpgciitem.icupo:before {content: "\f145";}
+.alrpgciitem.iequi:before {content: "\f3a5";}
+.alrpgciitem>span>i {text-transform: uppercase; font-weight: 700; letter-spacing: 0.7px; color: #ccc; font-size: 10px;}
+.alrpgciitem>em {display: flex; justify-content: flex-start; align-items: center; gap: 7px; text-transform: uppercase; font: 800 8px 'Martian Mono'; line-height: 100%; margin-top: 2px; color: #858585;}
+.alrpgciitem>em:after {content: ""; flex: 1; height: 1px; background: #cccccc26;}
+.alrpgciitem>em>i {border: 1px solid #cccccc26; font-style: normal; padding: 2px 4px;}
+.alrpgcinven:after {content: ""; width: 306px; height: 1px; top: 181px; left: 305px; background: #cccccc33; position: absolute; border-top: 10px solid #000; border-bottom: 10px solid #000;}
+.alrpgchitos {background: #080808; grid-area: hitos; z-index: 1;}
+.alrpgchitos>div {display: flex; flex-direction: column; overflow: auto; height: 100%; width: 100%; border: 14px solid transparent; box-sizing: border-box; border-right-width: 7px; padding-right: 7px; gap: 7px;}
+.alrpgchhito {width: 100%; box-sizing: border-box; border: 1px solid #cccccc26; min-height: 68px; max-height: 68px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px; position: relative; overflow: hidden;}
+.alrpgchhito>span {text-transform: uppercase; font: 600 11px 'Noto Sans'; flex: 1; line-height: 110%; max-width: 160px; color: #ccc;}
+.alrpgchhito>b {display: flex; flex-direction: column; flex-wrap: wrap; gap: 3px; justify-content: center;}
+.alrpgchhito>b.hitofour {height: 40px;}
+.alrpgchhito>b>em {font: 800 9px 'Martian Mono'; border: 1px solid #cccccc26; line-height: 100%; padding: 2px 4px; color: #858585; background: #000; transition: 0.7s ease;}
+.alrpgchhito>b>em.hcompleted {background-color: var(--accent); color: #000;}
+.alrpgchitos:before {content: ""; width: 1px; height: 192px; top: 0px; left: 601px; background: #cccccc33; position: absolute; border-left: 10px solid #000; border-right: 10px solid #000;}
+.alrpgchitos:after {content: ""; width: 308px; height: 1px; top: 181px; right: 0px; background: #cccccc33; position: absolute; border-top: 10px solid #000; border-bottom: 10px solid #000;}
+.alrpgcskills {background: #080808; grid-area: skills; z-index: 1; display: flex; flex-wrap: wrap; overflow: auto; box-sizing: border-box; border: 20px solid transparent; border-right-width: 10px; padding-right: 10px; gap: 14px;}
+.alrpgcsskill {flex: 1 0 40%; height: 100%; overflow: hidden; outline: 1px solid #cccccc26; outline-offset: -10px; box-sizing: border-box; position: relative; background: #000; transition: 0.7s ease;}
+.alrpgcsskill>b {position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; padding: 20px; opacity: 1; transition: 0.7s ease; text-transform: uppercase; gap: 4px;}
+.alrpgcsskill>b>i {position: absolute; z-index: 0; opacity: 0.1; font-style: normal; font: 300 210px "Font Awesome 6 Sharp";}
+.alrpgcsskill>b>i:before {content: ""; color: var(--accent); transition: 0.7s ease; line-height: 100%;}
+.alrpgcsskill.skat>b>i:before {content: "\f05b";}
+.alrpgcsskill.skde>b>i:before {content: "\f3ed";}
+.alrpgcsskill.skut>b>i:before {content: "\f301";}
+.alrpgcsskill.skve>b>i:before {content: "\f005";}
+.alrpgcsskill>b>span {font: 900 14px 'Noto Sans'; letter-spacing: 0.7px; line-height: 120%; color: #fff; text-decoration: underline 1px solid var(--accent); text-underline-offset: 2px; gap: 14px; position: relative;}
+.alrpgcsskill>b>em {text-decoration: none!important; color: #aaa; font: 700 11px 'EB Garamond'; letter-spacing: 1px; line-height: 100%; position: relative;}
+.alrpgcsskill>b>em>i {color: var(--accent); transition: 0.7s ease; font-style: normal;}
+.alrpgcsskill>span {opacity: 0; transition: 0.7s ease; position: relative; z-index: 1; border: 14px solid transparent; border-right-width: 7px; padding-right: 7px; display: block; overflow: auto; width: 100%; height: 100%; box-sizing: border-box; font: normal 12px 'Noto Sans'; line-height: 160%; color: #aaa; text-align: justify;}
+.alrpgcsskill>span>em {display: flex; gap: 7px; font: 700 9px 'Martian Mono'; color: #ccc; line-height: 100%; margin-top: 7px;}
+.alrpgcsskill>span>em>i {border: 1px solid #cccccc26; padding: 3px 4px; font-style: normal;}
+.alrpgcsskill:hover {outline-offset: -1px;}
+.alrpgcsskill:hover>b {opacity: 0;}
+.alrpgcsskill:hover>span {opacity: 1;}
+.alrpgciconito {background: #080808; grid-area: iconito; z-index: 2; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; align-items: center; text-align: center; padding: 14px; gap: 14px;}
+.alrpgciconito:before {content: ""; width: 1px; height: 192px; bottom: 0px; right: 145px; background: #cccccc33; position: absolute; border-left: 10px solid #000; border-right: 10px solid #000;}
+.alrpgciicon {width: 105px; height: 105px; background-image: url(https://i.imgur.com/ajw748j.gif); background-color: var(--accent); background-blend-mode: multiply; transition: 0.7s ease; outline: 1px solid #cccccc26; outline-offset: -1px; display: flex; justify-content: center; align-items: center;}
+.alrpgciicon:before {content: "\f719"; font: 100 60px 'Font Awesome 6 Pro'; color: #fff; background: #00000033; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+.alrpgciexp {outline: 1px solid #cccccc26; outline-offset: -1px; flex: 1; width: 100%; box-sizing: border-box; position: relative; display: flex; justify-content: center; align-items: center; border: 3px solid transparent;}
+.alrpgciexp:before, .alrpgciexp:after {color: #fff; font: 800 10px 'Noto Sans'; line-height: 100%; position: relative; z-index: 1;}
+.alrpgciexp:before {content: attr(actual);}
+.alrpgciexp:after {content: '/'attr(total);}
+.alrpgciexpbar {position: absolute; background-color: var(--accent); height: calc(100%); right: 0px; display: flex; box-sizing: border-box; z-index: 0; opacity: 0.7; transition: 0.7s;}
