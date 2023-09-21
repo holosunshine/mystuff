@@ -47,10 +47,16 @@
 .alrpgcinven:after {content: ""; width: 306px; height: 1px; top: 181px; left: 305px; background: #cccccc33; position: absolute; border-top: 10px solid #000; border-bottom: 10px solid #000;}
 .alrpgchitos {background: #080808; grid-area: hitos; z-index: 1;}
 .alrpgchitos>div {display: flex; flex-direction: column; overflow: auto; height: 100%; width: 100%; border: 14px solid transparent; box-sizing: border-box; border-right-width: 7px; padding-right: 7px; gap: 7px;}
-.alrpgchhito {width: 100%; box-sizing: border-box; border: 1px solid #cccccc26; min-height: 68px; max-height: 68px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px; position: relative; overflow: hidden;}
+.alrpgchtitle {display: flex; flex: 1; align-self: stretch; justify-content: space-between; align-items: center; text-transform: uppercase;}
+.alrpgchtitle>em {color: #fff; font: 700 10px 'EB Garamond'; border: 1px solid #cccccc26; line-height: 100%; height: 19px; display: flex; justify-content: center; align-items: center; padding: 0px 4px;}
+.alrpgchtitle>b {color: #ccc; font: 700 11px 'EB Garamond'; letter-spacing: 0.7px; line-height: 100%; display: flex; justify-content: flex-end; align-items: center; text-align: right; flex: 1;}
+.alrpgchtitle>b:before {content: ""; flex: 1; height: 1px; background: #cccccc26; margin-right: 7px;}
+.alrpgchhito {min-height: 54px!important;}
+.alrpgchhito {width: 100%; box-sizing: border-box; border: 1px solid #cccccc26; min-height: 54px; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px; position: relative; overflow: hidden;}
+.alrpgchhito.hitothree, .alrpgchhito.hitofour {min-height: 68px;}
 .alrpgchhito>span {text-transform: uppercase; font: 600 11px 'Noto Sans'; flex: 1; line-height: 110%; max-width: 160px; color: #ccc;}
 .alrpgchhito>b {display: flex; flex-direction: column; flex-wrap: wrap; gap: 3px; justify-content: center;}
-.alrpgchhito>b.hitofour {height: 40px;}
+.alrpgchhito.hitofour>b {height: 40px;}
 .alrpgchhito>b>em {font: 800 9px 'Martian Mono'; border: 1px solid #cccccc26; line-height: 100%; padding: 2px 4px; color: #858585; background: #000; transition: 0.7s ease;}
 .alrpgchhito>b>em.hcompleted {background-color: var(--accent); color: #000;}
 .alrpgchitos:before {content: ""; width: 1px; height: 192px; top: 0px; left: 601px; background: #cccccc33; position: absolute; border-left: 10px solid #000; border-right: 10px solid #000;}
