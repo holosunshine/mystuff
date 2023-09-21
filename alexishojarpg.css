@@ -30,8 +30,8 @@
 .alrpgcstats>span>u {position: absolute; z-index: 1; font: 700 11px 'Noto Sans'; letter-spacing: 0.7px; color: #fff; text-decoration: underline 1px solid var(--accent); transition: 0.7s; text-underline-offset: 2px; line-height: 120%;}
 .alrpgcstats>span:hover>b {transform: translateY(-3px);}
 .alrpgcstats>span:hover>u {transform: translateY(14px);}
-.alrpgcinven {background: #080808; grid-area: stash; z-index: 2; overflow: auto; border: 14px solid transparent; border-right-width: 7px; padding-right: 7px; box-sizing: border-box; color: #aaa;}
-.alrpgciitem {font: normal 12px 'Noto Sans'; line-height: 146%;}
+.alrpgcinven {text-align: justify; background: #080808; grid-area: stash; z-index: 2; overflow: auto; border: 14px solid transparent; border-right-width: 7px; padding-right: 7px; box-sizing: border-box; color: #aaa;}
+.alrpgciitem {font: normal 12px 'Noto Sans'; line-height: 144%;}
 .alrpgciitem:not(:first-of-type) {margin-top: 7px;}
 .alrpgciitem>b {text-transform: uppercase; font: 900 11px 'EB Garamond'; color: #fff; text-decoration: underline 1px solid var(--accent); text-underline-offset: 2px; transition: 0.7s ease; letter-spacing: 0.7px;}
 .alrpgciitem:before {content: ""; margin-right: 7px; margin-top: 4px; font: 400 16px 'Font Awesome 6 Pro'; background: var(--accent); color: #fff; border-radius: 3px; transition: 0.7s ease; float: left; width: 29px; height: 29px; display: flex; justify-content: center; align-items: center;}
