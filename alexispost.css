@@ -16,7 +16,7 @@
 .alexispost .alephead>i:before {color: var(--accent); transition: 0.7s ease; font-size: 55px; opacity: 0.3;}
 .alexispost .alephead>i:after {content: ""; position: absolute; z-index: 0; width: 1px; height: calc(100%); background: #cccccc26; top: 111px;}
 .alexispost .alephead>* {position: relative; z-index: 1;}
-.alexispost .alephead>b {text-transform: uppercase; font: 800 30px 'EB Garamond'; letter-spacing: 2px; color: #fff; line-height: 90%;}
+.alexispost .alephead>b {text-transform: uppercase; font: 800 35px 'EB Garamond'; letter-spacing: 2px; color: #fff; line-height: 90%;}
 .alexispost .alephead>em {text-transform: lowercase; font: 400 11px 'EB Garamond'; color: #aaa; letter-spacing: 1px; line-height: 160%; border: 1px solid #cccccc26; padding: 20px; width: 60%; text-align: justify; text-align-last: center; background: #080808;}
 .alexispost .alephead>strong {color: var(--accent); transition: 0.7s ease; margin-top: 25px;}
 .alexispost .alepcont {position: relative; z-index: 2; width: 100%; box-sizing: border-box; padding: 50px; text-align: justify; color: #858585; font: normal 13px 'Noto Sans'; line-height: 160%;}
