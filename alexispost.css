@@ -1,0 +1,23 @@
+.alexispost {background: #080808; width: 520px; margin: 20px auto; outline-offset: 10px; box-sizing: border-box; position: relative; --accent: var(--terra);}
+.alexispost:hover {--accent: #58478b;}
+.alexispost:before, .alexispost:after {content: ""; width: 544px; top: -13px; height: calc(100% + 25px); position: absolute; z-index: 0;}
+.alexispost:before {border-left: 1px solid #cccccc33; border-top: 1px solid #cccccc33; left: -13px;}
+.alexispost:after {border-right: 1px solid #cccccc33; right: -13px;}
+.alexispost>br, .alexispost>.alephead>br, .alexispost>.alepdeets>br {display: none!important;}
+.alexispost .alepdeets {position: absolute; z-index: 1; bottom: -17px; right: -13px;  width: 545px; display: flex; justify-content: flex-end; align-items: center; text-align: right; gap: 7px;}
+.alexispost .alepdeets:before, .alexispost .alepdeets:after {content: ""; height: 1px; background: #cccccc33;}
+.alexispost .alepdeets:before {flex: 1;}
+.alexispost .alepdeets:after {width: 40px;}
+.alexispost .alepdeets>span {text-transform: uppercase; color: #aaa; font: 500 8px 'Martian Mono'; line-height: 100%; letter-spacing: 1px; height: 9px;}
+.alexispost .alepdeets>span i {color: var(--accent); transition: 0.7s ease; font-weight: 700; font-style: normal;}
+.alexispost .alepdeets>span a {color: #aaa!important; cursor: crosshair; text-decoration: none!important;}
+.alexispost .alephead {display: flex; flex-direction: column; text-align: center; justify-content: center; align-items: center; width: 100%; box-sizing: border-box; padding: 50px; padding-bottom: 0px; position: relative; z-index: 2; overflow: hidden; gap: 25px;}
+.alexispost .alephead>i {position: absolute; border: 1px solid #cccccc26; width: 110px; height: 110px; border-radius: 100%; display: flex; justify-content: center; align-items: center; top: -30px; z-index: 0;}
+.alexispost .alephead>i:before {color: var(--accent); transition: 0.7s ease; font-size: 55px; opacity: 0.3;}
+.alexispost .alephead>i:after {content: ""; position: absolute; z-index: 0; width: 1px; height: calc(100%); background: #cccccc26; top: 111px;}
+.alexispost .alephead>* {position: relative; z-index: 1;}
+.alexispost .alephead>b {text-transform: uppercase; font: 800 30px 'EB Garamond'; letter-spacing: 2px; color: #fff; line-height: 90%;}
+.alexispost .alephead>em {text-transform: lowercase; font: 400 11px 'EB Garamond'; color: #aaa; letter-spacing: 1px; line-height: 160%; border: 1px solid #cccccc26; padding: 20px; width: 60%; text-align: justify; text-align-last: center; background: #080808;}
+.alexispost .alephead>strong {color: var(--accent); transition: 0.7s ease; margin-top: 25px;}
+.alexispost .alepcont {position: relative; z-index: 2; width: 100%; box-sizing: border-box; padding: 50px; text-align: justify; color: #858585; font: normal 13px 'Noto Sans'; line-height: 160%;}
+.alexispost .alepcont b, .alexispost .alepcont strong {font-weight: 700; color: var(--accent); transition: 0.7s ease;}
