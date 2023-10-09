@@ -1,10 +1,10 @@
-.alexispost {background: #080808; width: 520px; margin: 20px auto; outline-offset: 10px; box-sizing: border-box; position: relative; --accent: var(--terra);}
+.alexispost {background: #080808; width: 500px; margin: 20px auto; outline-offset: 10px; box-sizing: border-box; position: relative; --accent: var(--terra);}
 .alexispost:hover {--accent: #58478b;}
-.alexispost:before, .alexispost:after {content: ""; width: 544px; top: -13px; height: calc(100% + 25px); position: absolute; z-index: 0;}
+.alexispost:before, .alexispost:after {content: ""; width: 524px; top: -13px; height: calc(100% + 25px); position: absolute; z-index: 0;}
 .alexispost:before {border-left: 1px solid #cccccc33; border-top: 1px solid #cccccc33; left: -13px;}
 .alexispost:after {border-right: 1px solid #cccccc33; right: -13px;}
 .alexispost>br, .alexispost>.alephead>br, .alexispost>.alepdeets>br {display: none!important;}
-.alexispost .alepdeets {position: absolute; z-index: 1; bottom: -17px; right: -13px;  width: 545px; display: flex; justify-content: flex-end; align-items: center; text-align: right; gap: 7px;}
+.alexispost .alepdeets {position: absolute; z-index: 1; bottom: -17px; right: -13px;  width: 525px; display: flex; justify-content: flex-end; align-items: center; text-align: right; gap: 7px;}
 .alexispost .alepdeets:before, .alexispost .alepdeets:after {content: ""; height: 1px; background: #cccccc33;}
 .alexispost .alepdeets:before {flex: 1;}
 .alexispost .alepdeets:after {width: 40px;}
