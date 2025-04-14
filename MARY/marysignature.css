@@ -1,0 +1,105 @@
+#marysignature {
+  margin: 0 auto;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+#marysignature br {
+  display: none!important;
+}
+
+#marysignature * {
+  box-sizing: border-box;
+  transition: 0.4s ease;
+}
+
+#marysignature>.marysigtextcont {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+#marysignature>.marysigtextcont>em {
+  position: absolute;
+  text-transform: uppercase;
+  font: 700 8px var(--f-mono);
+  color: var(--subtitle);
+  line-height: 100%;
+  letter-spacing: 1.5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+#marysignature:hover>.marysigtextcont>em {
+  opacity: 0.4;
+}
+
+#marysignature>.marysigtextcont>b {
+  position: relative;
+  text-transform: uppercase;
+  font: normal 35px Rakkas;
+  -webkit-text-stroke: .25px rgb(from var(--title) r g b / 10%);;
+  color: transparent;
+  text-shadow: 2px 1px var(--groupbody-25);
+  line-height: 80%;
+  letter-spacing: 1px;
+  word-spacing: 8px;
+  z-index: 0;
+}
+
+#marysignature:hover>.marysigtextcont>b {
+  text-shadow: 1px 1px var(--groupbody-50);
+}
+
+#marysignature>.marysigtextcont>a {
+  color: var(--groupbody-75);
+  text-decoration: none!important;
+  font: 700 10px var(--f-mono);
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+#marysignature>.marysigtextcont>a:hover {
+  color: var(--groupbody);
+}
+
+#marysignature>.marysigtextcont>a>i {
+  font-size: 30px;
+  height: 20px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#marysignature>.marysigimgcont {
+  height: 180px;
+  width: 260px;
+  margin: 7px auto;
+  border: 1px solid rgb(from var(--title) r g b / 6%);
+  border-left-width: 2px;
+  border-left-color: var(--groupbody-50);
+  border-right-width: 2px;
+  border-right-color: var(--groupbody-50);
+  position: relative;
+  padding: 8px;
+  overflow: hidden;
+}
+
+#marysignature:hover>.marysigimgcont {
+  border-left-color: var(--groupbody-75)!important;
+  border-right-color: var(--groupbody-75);
+}
+
+#marysignature>.marysigimgcont>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  position: relative;
+  z-index: 0;
+}
+
+#marysignature:hover>.marysigimgcont>img {
+  filter: grayscale(1) contrast(1.1) brightness(0.2);
+}
