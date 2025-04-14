@@ -59,7 +59,7 @@
   line-height: 100%;
 }
 
-#marysignature>.marysigtextcont>a:hover {
+#marysignature>.marysigtextcont>a:hover, #marysignature>.marysigtextcont>a:hover>i {
   color: var(--groupbody);
 }
 
@@ -70,6 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--groupbody-75);
 }
 
 #marysignature>.marysigimgcont {
