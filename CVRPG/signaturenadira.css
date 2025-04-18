@@ -43,6 +43,7 @@
   color: var(--subtitle)!important;
   border: none!important;
   text-transform: lowercase!important;
+  text-decoration: 1px solid underline;
 }
 
 #signaturenadira .signadtextcont strike {
