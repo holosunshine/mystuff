@@ -7,6 +7,10 @@
   color: var(--text1);
 }
 
+#signaturenadira img {
+  pointer-events: none;
+}
+
 #signaturenadira img.signadimgdiv {
   width: 130px;
   margin: 2px auto;
