@@ -1,0 +1,84 @@
+#signaturenadira {
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+  text-transform: lowercase;
+  gap: 9px;
+  color: var(--text1);
+}
+
+#signaturenadira img.signadimgdiv {
+  width: 130px;
+  margin: 2px auto;
+}
+
+#signaturenadira * {
+  box-sizing: content-box!important;
+}
+
+#signaturenadira br {
+  display: none!important;
+}
+
+#signaturenadira .signadtextcont {
+  font: normal 8px var(--f-mono);
+  letter-spacing: 1.5px;
+  line-height: 100%;
+}
+
+#signaturenadira .signadtextcont br {
+  display: inline!important;
+}
+
+#signaturenadira .signadtextcont strong, #signaturenadira .signadtextcont b {
+  font-weight: 700;
+  color: var(--group);
+}
+
+#signaturenadira .signadtextcont i {
+  color: var(--title);
+}
+
+#signaturenadira .signadtextcont u {
+  color: var(--subtitle);
+}
+
+#signaturenadira .signadtextcont strike {
+  color: var(--text3);
+}
+  
+#signaturenadira .signadtextcont u, #signaturenadira .signadtextcont strike {
+  text-decoration-color: var(--group);
+}
+
+#signaturenadira .signadimgcont {
+  width: 270px;
+  height: 160px;
+  border: 6px solid color-mix(in srgb, var(--dbckg0), var(--dbckg1));
+  outline: var(--border2);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+#signaturenadira:hover .signadimgcont {
+  outline-color: var(--group);
+}
+
+#signaturenadira .signadimgcont>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  position: relative;
+  z-index: 0;
+  transition: 0.4s ease;
+}
+
+#signaturenadira:hover .signadimgcont>img {
+  filter: grayscale(1);
+}
+
+#signaturenadira img.signadimgicon {
+  width: 16px;
+  margin: 2px auto;
+}
