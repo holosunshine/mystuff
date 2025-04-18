@@ -40,7 +40,9 @@
 }
 
 #signaturenadira .signadtextcont u {
-  color: var(--subtitle);
+  color: var(--subtitle)!important;
+  border: none!important;
+  text-transform: lowercase!important;
 }
 
 #signaturenadira .signadtextcont strike {
