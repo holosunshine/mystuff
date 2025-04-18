@@ -40,7 +40,7 @@
   font: normal 35px Rakkas;
   -webkit-text-stroke: .25px rgb(from var(--title) r g b / 10%);;
   color: transparent;
-  text-shadow: 2px 1px var(--groupbody-25);
+  text-shadow: 2px 1px var(--group-25);
   line-height: 80%;
   letter-spacing: 1px;
   word-spacing: 8px;
@@ -48,11 +48,11 @@
 }
 
 #marysignature:hover>.marysigtextcont>b {
-  text-shadow: 1px 1px var(--groupbody-50);
+  text-shadow: 1px 1px var(--group-50);
 }
 
 #marysignature>.marysigtextcont>a {
-  color: var(--groupbody-75);
+  color: var(--group-75);
   text-decoration: none!important;
   font: 700 10px var(--f-mono);
   text-transform: uppercase;
@@ -60,7 +60,7 @@
 }
 
 #marysignature>.marysigtextcont>a:hover, #marysignature>.marysigtextcont>a:hover>i {
-  color: var(--groupbody);
+  color: var(--group);
 }
 
 #marysignature>.marysigtextcont>a>i {
@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--groupbody-75);
+  color: var(--group-75);
 }
 
 #marysignature>.marysigimgcont {
@@ -79,17 +79,17 @@
   margin: 7px auto;
   border: 1px solid rgb(from var(--title) r g b / 6%);
   border-left-width: 2px;
-  border-left-color: var(--groupbody-50);
+  border-left-color: var(--group-50);
   border-right-width: 2px;
-  border-right-color: var(--groupbody-50);
+  border-right-color: var(--group-50);
   position: relative;
   padding: 8px;
   overflow: hidden;
 }
 
 #marysignature:hover>.marysigimgcont {
-  border-left-color: var(--groupbody-75)!important;
-  border-right-color: var(--groupbody-75);
+  border-left-color: var(--group-75)!important;
+  border-right-color: var(--group-75);
 }
 
 #marysignature>.marysigimgcont>img {
