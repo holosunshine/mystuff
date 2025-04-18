@@ -61,7 +61,7 @@
 #signaturenadira .signadimgcont {
   width: 270px;
   height: 160px;
-  border: 6px solid color-mix(in srgb, var(--dbckg0), var(--dbckg1));
+  padding: 6px;
   outline: var(--border2);
   overflow: hidden;
   transition: 0.4s ease;
