@@ -1,0 +1,4 @@
+.tca-post.alexis {--accent: var(--terra);}
+.tca-post.alexis:hover {--accent: #58478b;}
+.tca-post.alexis * {transition: 0.7s ease;}
+.tca-post.alexis>b, .tca-post.alexis>strong {color: var(--accent);}
