@@ -1,0 +1,53 @@
+.felirelas {--accent1: #82537A; --accent2: #82537Ab3; --back1: #111; --back2: #111111b3; --back3: #000; --back4: #000000b3; --back5: #0a0a0a; --color1: #ccc; --color2: #f1f1f1; --color3: #aaa; --color4: #777; --font1: 'Fira Sans'; --font2: 'Fira Sans Condensed'; --font3: 'Fira Sans Extra Condensed'; --font4: 'Noto Serif Display'; --font5: 'Texturina'; --restituta: #406475; --excubita: #82537A; --vindicata: #475738b3; --singrupo: #3a3844; --restituta1: #406475b3; --excubita1: #82537Ab3; --vindicata1: #475738b3; --singrupo1: #3a3844b3;}
+.felirelas {background: var(--back1); width: 100%; min-width: 800px; height: 600px; margin: 0 auto; border: 7px solid var(--back1); box-sizing: border-box; overflow: hidden; color: var(--color1); font-family: var(--font1); display: flex; flex-direction: column-reverse; flex-wrap: wrap; max-width: 950px;}
+.felirelas *::-webkit-scrollbar {width: 1px;height: 1px;}
+.felirelas *::-webkit-scrollbar-track {background: var(--back4);}
+.felirelas *::-webkit-scrollbar-thumb {background: var(--accent1);}
+.felirelas *::-webkit-scrollbar-thumb:hover {background: var(--accent1);}
+.felirelas *::-webkit-scrollbar-corner {background: var(--back1);}
+.felirelas * {transition: 0.7s; box-sizing: border-box;}
+.felirelas br {display: none;}
+.felirelas .felirheader {position: relative; top: -14px; margin-bottom: -14px; width: 100%; background: var(--accent2) url(https://i.imgur.com/ikLO6ub.png); height: 150px; background-blend-mode: multiply; background-position: 50% 50%; background-size: cover; background-attachment: fixed; clip-path: polygon(50% 0%, 100% 14%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 14%); display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 7px; overflow: hidden;}
+.felirelas .felirheader #headernam {position: absolute; top: -30px; width: max-content; font: 230px var(--font4); text-align: center; text-transform: uppercase; color: transparent; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: var(--color3); font-weight: 900; line-height: 90%; opacity: 0.1;}
+.felirelas .felirheader .frsubheader {position: relative; font: 50px var(--font4); letter-spacing: 1px; text-transform: lowercase; font-weight: 700; color: var(--color2); line-height: 100%; border-bottom: 1px dotted var(--accent1); text-align: center; margin-top: 7px;}
+.felirelas .felirheader .frsubquote {width: auto; height: auto; text-align: center; font: 9px var(--font5); color: var(--color4); text-transform: lowercase; letter-spacing: 1px; line-height: 140%;}
+.felirelas .felirheader .frsubquote>b {text-transform: uppercase; font-weight: 900; font-family: var(--font3); color: var(--accent2);}
+.felirelas .felirheader .frsubquote>i {font-family: var(--font4); color: var(--color1);}
+.felirelas .felirheader .frsubquote>u {text-transform: uppercase; font-family: var(--font2); color: var(--color3); text-decoration-color: var(--accent2);}
+.felirelas .felirheader .frsubquote>s {text-decoration-color: var(--accent2); text-decoration-style: double;}
+.felirelas .felirheader>em {position: absolute; top: 14px; color: var(--accent2); opacity: 0.7;}
+.felirelas .felircontent {position: relative; background: var(--back5); width: 100%; height: 449px; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 95%, 50% 95%, 0 100%, 0 0); padding-bottom: 13px; border: 7px solid transparent; border-right: 4px solid transparent; overflow: hidden;}
+.felirelas .felircontent>div {width: 100%; height: 98%; display: flex; flex-wrap: wrap; justify-content: center; align-items: start; gap: 7px; overflow: auto; padding-right: 4px;}
+.felirelas .felircontent>div .rel {flex: 1 0 30%; height: 49%; position: relative; display: flex; flex-direction: column; flex-wrap: wrap; gap: 4px; overflow: hidden;}
+.felirelas .felircontent>div .rel .relimg {position: absolute; height: 100%; width: 100%; filter: grayscale(1) brightness(0.4); background-position: center; background-size: cover; overflow: hidden;}
+.felirelas .felircontent>div .rel .relstatus  {position: absolute; width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; align-items: end; oveflow: hidden;}
+.felirelas .felircontent>div .rel .relstatus>a {font: 16px var(--font4); font-weight: 700; letter-spacing: 0.5px; line-height: 100%; color: var(--color2); text-transform: lowercase; margin: 7px 7px 4px 7px; text-decoration: none; overflow: hidden;}
+.felirelas .felircontent>div .rel .relstatus>em {font: 11px var(--font5); letter-spacing: 1px; width: 100%; text-align: right; line-height: 100%; color: var(--color1); padding: 3px 7px 6px 7px; border-top: 1px dotted var(--color4); overflow: hidden;}
+.felirelas .felircontent>div .rel .relblurb {position: absolute; background: var(--back4); border: 0px solid transparent; width: 100%; height: 0%; overflow: hidden; bottom: 0px; backdrop-filter: blur(4px);}
+.felirelas .felircontent>div .rel .relblurb>div {font: 12px var(--font1); height: 100%; line-height: 117%; padding-right: 7px; text-align: justify; overflow: auto;}
+.felirelas .felircontent>div .rel .relblurb>div br {display: block;}
+.felirelas .felircontent>div .rel.restituta .relstatus>em {background: var(--restituta1);}
+.felirelas .felircontent>div .rel.vindicata .relstatus>em {background: var(--vindicata1);}
+.felirelas .felircontent>div .rel.excubita .relstatus>em {background: var(--excubita1);}
+.felirelas .felircontent>div .rel.grupo .relstatus>em {background: var(--singrupo1);}
+.felirelas .felircontent>div .rel.restituta .relblurb>div::-webkit-scrollbar-thumb {background: var(--restituta);}
+.felirelas .felircontent>div .rel.restituta .relblurb>div::-webkit-scrollbar-thumb:hover {background: var(--restituta);}
+.felirelas .felircontent>div .rel.vindicata .relblurb>div::-webkit-scrollbar-thumb {background: var(--vindicata);}
+.felirelas .felircontent>div .rel.vindicata .relblurb>div::-webkit-scrollbar-thumb:hover {background: var(--vindicata);}
+.felirelas .felircontent>div .rel.excubita .relblurb>div::-webkit-scrollbar-thumb {background: var(--excubita);}
+.felirelas .felircontent>div .rel.excubita .relblurb>div::-webkit-scrollbar-thumb:hover {background: var(--excubita);}
+.felirelas .felircontent>div .rel.grupo .relblurb>div::-webkit-scrollbar-thumb {background: var(--singrupo);}
+.felirelas .felircontent>div .rel.grupo .relblurb>div::-webkit-scrollbar-thumb:hover {background: var(--singrupo);}
+.felirelas .felircontent>div .rel:hover .relstatus {transform: translatey(-152px);}
+.felirelas .felircontent>div .rel:hover .relblurb {height: 75%; border: 14px solid transparent; border-right: 7px solid transparent;}
+.felirelas .felircontent>div .rel .relblurb>div>strong, .felirelas .felircontent>div .rel .relblurb>div>b {font-family: var(--font2); font-weight: 800;}
+.felirelas .felircontent>div .rel .relblurb>div>em, .felirelas .felircontent>div .rel .relblurb>div>i {color: var(--color2); font-family: var(--font4); font-style: italic;}
+.felirelas .felircontent>div .rel .relblurb>div>u, .felirelas .felircontent>div .rel .relblurb>div>s {color: var(--color3); font-family: var(--font5);}
+.felirelas .felircontent>div .rel.vindicata .relblurb>div>strong, .felirelas .felircontent>div .rel.vindicata .relblurb>div>b {color: var(--vindicata);}
+.felirelas .felircontent>div .rel.vindicata .relblurb>div>u, .felirelas .felircontent>div .rel.vindicata .relblurb>div>s {text-decoration-color: var(--vindicata);}
+.felirelas .felircontent>div .rel.excubita .relblurb>div>strong, .felirelas .felircontent>div .rel.excubita .relblurb>div>b {color: var(--excubita);}
+.felirelas .felircontent>div .rel.excubita .relblurb>div>u, .felirelas .felircontent>div .rel.excubita .relblurb>div>s {text-decoration-color: var(--excubita);}
+.felirelas .felircontent>div .rel.restituta .relblurb>div>strong, .felirelas .felircontent>div .rel.restituta .relblurb>div>b {color: var(--restituta);}
+.felirelas .felircontent>div .rel.restituta .relblurb>div>u, .felirelas .felircontent>div .rel.restituta .relblurb>div>s {text-decoration-color: var(--restituta);}
+.felirelas .felircontent>div .rel.grupo .relblurb>div>strong, .felirelas .felircontent>div .rel.grupo .relblurb>div>b {color: var(--singrupo);}
+.felirelas .felircontent>div .rel.grupo .relblurb>div>u, .felirelas .felircontent>div .rel.grupo .relblurb>div>s {text-decoration-color: var(--singrupo);}

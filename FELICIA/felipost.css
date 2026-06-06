@@ -1,0 +1,19 @@
+.diesfpost {--back1: #0a0a0a; --back2: #111; --back3: #000; --color1: #ccc; --color2: #f1f1f1; --color3: #aaa; --color4: #77777766; --font1: 'Fira Sans'; --font2: 'Fira Sans Condensed'; --font3: 'Fira Sans Extra Condensed'; --font4: 'Noto Serif Display'; --font5: 'Texturina';}
+.diesfpost.felicia {--accent1: #82537A; --accent2: #82537Ab3;}
+.diesfpost {margin: 0 auto; width: 100%; max-width: 540px; background: var(--back1); box-sizing: border-box; padding: 50px; display: flex; flex-direction: column; gap: 7px;}
+.diesfpost * {box-sizing: border-box;}
+.diesfpost br {display: none;}
+.diesfpost .dfpheader {width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 7px; margin-bottom: 30px;}
+.diesfpost .dfpheader>strong {font: 30px var(--font4); font-weight: 800; color: var(--accent1); line-height: 90%; text-align: center; width: 100%; text-transform: lowercase; letter-spacing: 1px; text-decoration: underline; text-decoration-color: var(--color4); text-decoration-thickness: 1px; text-decoration-style: dotted;}
+.diesfpost .dfpheader>em {font: 10px var(--font5); text-transform: lowercase; line-height: 100%; font-weight: 500; letter-spacing: 3px; color: var(--color3); font-style: italic;}
+.diesfpost .dfpheader:after {content: "\f078"; font: 17px "Font Awesome 6 Pro"; font-weight: 400; color: var(--accent1); margin-top: 23px;}
+.diesfpost .dfpdata {display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px 17px; width: 100%; padding: 7px; background: var(--back3); border-top: 1px dotted var(--accent2); border-bottom: 1px dotted var(--accent2); margin-top: 30px;}
+.diesfpost .dfpdata>span {font: 9px var(--font5); font-weight: 500; color: var(--color3); text-align: center; text-transform: lowercase; letter-spacing: 2px; line-height: 100%;}
+.diesfpost .dfpcontent {width: 100%; text-align: justify; color: var(--color1); color: var(--color1); font: 12px var(--font1); line-height: 150%;}
+.diesfpost .dfpdata>i {color: var(--accent1); font-size: 12px;}
+.diesfpost .dfpcontent br {display: block;}
+.diesfpost .dfpcontent strong, .diesfpost .dfpcontent b {color: var(--accent1); font-weight: 800;}
+.diesfpost .dfpcontent em, .diesfpost .dfpcontent i {color: var(--color2); font-family: var(--font2); font-weight: 600;}
+.diesfpost .dfpcontent u, .diesfpost .dfpcontent s {color: var(--color2); font-weight: 500; text-decoration-color: var(--accent2);}
+.diesfpost .dfpcontent u {font-family: var(--font5);}
+.diesfpost .dfpcontent s {font-family: var(--font2); text-decoration-style: double;}

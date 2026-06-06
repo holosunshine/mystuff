@@ -1,0 +1,18 @@
+.felificha {--accent1: #82537A; --accent2: #82537Ab3; --back1: #111; --back2: #111111b3; --back3: #000; --back4: #000000b3; --back5: #0a0a0a; --color1: #ccc; --color2: #f1f1f1; --color3: #aaa; --color4: #777; --font1: 'Fira Sans'; --font2: 'Fira Sans Condensed'; --font3: 'Fira Sans Extra Condensed'; --font4: 'Noto Serif Display'; --font5: 'Texturina';}
+.felificha {max-width: 470px; margin: 0 auto; width: 100%; background: transparent; color: var(--color1); font: 12px var(--font1);}
+.felificha br {display: none;}
+.felificha * {box-sizing: border-box;}
+.felificha .feliftit {display: flex; flex-direction: column; margin: 28px 0px; text-align: center; text-transform: lowercase;}
+.felificha .feliftit>strong {font: 24px var(--font4); font-weight: 800; color: var(--color2); line-height: 100%;}
+.felificha .feliftit>strong:after {content: " "; background: var(--accent2); width: 70px; height: 1px; display: block; margin: 0px auto; margin-top: 4px;}
+.felificha .feliftit>em {line-height: 100%; font: 10px var(--font5); color: var(--color4); letter-spacing: 2px; font-style: italic;}
+.felificha .felifcontent {text-align: justify; line-height: 140%;}
+.felificha .felifcontent br {display: block;}
+.felificha .felifcontent>b, .felificha .felifcontent>strong {color: var(--accent1); font-family: var(--font2); font-weight: 900;}
+.felificha .felifcontent>i, .felificha .felifcontent>em {font-family: var(--font4); font-style: italic; color: var(--color2); letter-spacing: 1px;}
+.felificha .felifcontent>u {text-decoration: none; border-bottom: 1px dotted var(--accent2); font-family: var(--font5); color: var(--color3);}
+.felificha .felifcontent>s {color: var(--color3); font-family: var(--font2); text-decoration-color: var(--accent2); text-decoration-style: double;}
+.felificha>em {text-align: center; color: var(--accent1); font-size: 17px; margin: 46px auto; width: inherit;}
+.felificha .felifextras {max-width: 70%; margin: 0px auto; margin-top: 7px; text-align: justify; line-height: 140%;}
+.felificha .felifextras br {display: block;}
+.felificha .felifextras>strong {background: var(--back1); float: left; padding: 13px; border-right: 2px solid var(--accent2); border-bottom: 2px solid var(--accent1); margin-right: 7px; font: 16px var(--font4); font-weight: 900; color: var(--txt2); line-height: 115%;}

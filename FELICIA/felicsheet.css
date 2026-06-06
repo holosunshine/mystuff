@@ -1,0 +1,54 @@
+.felicsheet {--accent1: #82537A; --accent2: #82537Ab3; --back1: #111; --back2: #111111b3; --back3: #000; --back4: #000000b3; --back5: #0a0a0a; --color1: #ccc; --color2: #f1f1f1; --color3: #aaa; --color4: #777; --font1: 'Fira Sans'; --font2: 'Fira Sans Condensed'; --font3: 'Fira Sans Extra Condensed'; --font4: 'Noto Serif Display'; --font5: 'Texturina';}
+.felicsheet {background: var(--back1); width: 100%; min-width: 800px; height: 570px; margin: 0 auto; border: 7px solid var(--back1); box-sizing: border-box; overflow: hidden; color: var(--color1); font-family: var(--font1); display: flex; flex-direction: column-reverse; flex-wrap: wrap; max-width: 950px;}
+.felicsheet *::-webkit-scrollbar {width: 1px;height: 1px;}
+.felicsheet *::-webkit-scrollbar-track {background: var(--back4);}
+.felicsheet *::-webkit-scrollbar-thumb {background: var(--accent1);}
+.felicsheet *::-webkit-scrollbar-thumb:hover {background: var(--accent1);}
+.felicsheet *::-webkit-scrollbar-corner {background: var(--back1);}
+.felicsheet * {transition: 0.7s; box-sizing: border-box;}
+.felicsheet br {display: none;}
+.felicsheet .felisheader {position: relative;width: 100%; background: var(--accent2) url(https://i.imgur.com/ikLO6ub.png); height: 150px; background-blend-mode: multiply; background-position: 50% 50%; background-size: cover; background-attachment: fixed; clip-path: polygon(50% 0%, 100% 14%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 14%); display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 7px; overflow: hidden;}
+.felicsheet .felisheader #headernam {position: absolute; top: -30px; width: max-content; font: 230px var(--font4); text-align: center; text-transform: uppercase; color: transparent; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: var(--color3); font-weight: 900; line-height: 90%; opacity: 0.1;}
+.felicsheet .felisheader .fssubheader {position: relative; font: 50px var(--font4); letter-spacing: 1px; text-transform: lowercase; font-weight: 700; color: var(--color2); line-height: 100%; border-bottom: 1px dotted var(--accent1); text-align: center; margin-top: 7px;}
+.felicsheet .felisheader .fssubquote {width: auto; height: auto; text-align: center; font: 9px var(--font5); color: var(--color4); text-transform: lowercase; letter-spacing: 1px; line-height: 140%;}
+.felicsheet .felisheader .fssubquote>b {text-transform: uppercase; font-weight: 900; font-family: var(--font3); color: var(--accent2);}
+.felicsheet .felisheader .fssubquote>i {font-family: var(--font4); color: var(--color1);}
+.felicsheet .felisheader .fssubquote>u {text-transform: uppercase; font-family: var(--font2); color: var(--color3); text-decoration-color: var(--accent2);}
+.felicsheet .felisheader .fssubquote>s {text-decoration-color: var(--accent2); text-decoration-style: double;}
+.felicsheet .felisheader>em {position: absolute; top: 14px; color: var(--accent2); opacity: 0.7;}
+.felicsheet .feliscontent {position: relative; background: var(--back5); width: 100%; height: 367px; bottom: -14px; clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 94%, 50% 94%, 0 100%, 0 0); padding-bottom: 13px; border: 7px solid transparent; border-riht: 4px solid transparent; overflow: hidden;}
+.felicsheet .feliscontent>div {display: flex; flex-wrap: wrap; justify-content: center; align-items: start; gap: 7px; width: 100%; height: 100%;}
+.felicsheet .feliscontent>div .csitems {position: relative; flex: 1 0 30%; height: 100%; border-right: 1px dotted var(--accent2); text-align: left; overflow: hidden; padding-right: 4px;}
+.felicsheet .feliscontent>div .csitems>div {height: 100%; width: 100%; overflow: auto; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 7px; padding-right: 4px;}
+.felicsheet .feliscontent>div .csitems>div .csitem {width: 100%; flex: 1 0 49%; background: var(--back1); overflow: hidden; display: flex; flex-direction: column; gap: 4px; justify-content: center; align-items: center; padding: 20px;}
+.felicsheet .feliscontent>div .csitems>div .csitem>i {width: 45px; height: 45px; background: var(--back3); border-radius: 100%; outline: 1px solid var(--accent2); outline-offset: 4px; margin: 5px; display: flex; justify-content: center; align-items: center; font-size: 22px; color: var(--accent1); font-family: RPGAwesome; font-style: normal; font-weight: 400; line-height: 1; speak: none; text-transform: none;}
+.felicsheet .feliscontent>div .csitems>div .csitem.weapon>i:before {content: "";}
+.felicsheet .feliscontent>div .csitems>div .csitem.armour>i:before {content: "";}
+.felicsheet .feliscontent>div .csitems>div .csitem.jewel>i:before {content: "";}
+.felicsheet .feliscontent>div .csitems>div .csitem.item>i:before {content: "";}
+.felicsheet .feliscontent>div .csitems>div .csitem.weapon.amulet>i:before {content: "";}
+.felicsheet .feliscontent>div .csitems>div .csitem>strong {font: 16px var(--font5); word-spacing: 1px; font-weight: 900; text-transform: lowercase; color: var(--color2); border-bottom: 1px dotted var(--accent2); margin-top: 4px; line-height: 110%; text-align: center;}
+.felicsheet .feliscontent>div .csitems>div .csitem>em {margin-top: 7px; max-height: 30%; height: auto; overflow: auto; text-align: center; width: 100%; font: 12px var(--font1); color: var(--color3); font-weight: normal; font-style: normal; line-height: 110%;}
+.felicsheet .feliscontent>div .csitems>div .csitem>em>i {text-transform: uppercase; font-family: var(--font2); color: var(--accent2); font-weight: 600; font-style: normal; margin-right: 5px;}
+.felicsheet .feliscontent>div .csqualities {position: relative; flex: 1 0 30%; height: 100%; text-align: justify; overflow: hidden;}
+.felicsheet .feliscontent>div .csqualities>div {position: relative; flex: 1 0 33%; height: 100%; padding: 4px 4px 10px 4px; overflow: auto;}
+.felicsheet .feliscontent>div .csqualities>div ul {margin: 0px; padding: 0px; display: flex; flex-direction: column; gap: 7px; justify-content: space-between; height: 100%;}
+.felicsheet .feliscontent>div .csqualities>div ul li {list-style-type: none; display: flex; justify-content: space-between; border-bottom: 1px dotted var(--color4); padding-bottom: 3px;}
+.felicsheet .feliscontent>div .csqualities>div ul li>strong {font: 13px var(--font2); font-weight: 900; text-transform: uppercase; letter-spacing: 1px; line-height: 100%; color: var(--accent1); text-align: left;}
+.felicsheet .feliscontent>div .csqualities>div ul li>em {text-transform: lowercase; font: 13px var(--font5); margin-left: 7px; color: var(--color3);line-height: 100%; text-align: right;}
+.felicsheet .feliscontent>div .csqualities>div ul li.explanations {font: 10px var(--font5); line-height: 110%; text-align: justify; color: var(--color4); font-weight: 600; border-bottom: 0px; background: var(--back1); padding: 14px;}
+.felicsheet .feliscontent>div .csqualities>div ul li.explanations br {display: block;}
+.felicsheet .feliscontent>div .csskills {position: relative; flex: 1 0 30%; height: 100%; border-left: 1px dotted var(--accent2); text-align: right; overflow: auto; padding-right: 4px; padding-left: 7px; display: flex; flex-direction: column; flex-wrap: nowrap; gap: 7px;}
+.felicsheet .feliscontent>div .csskills .csskill {width: 100%; flex: 1 0 23%; overflow: hidden; padding: 20px; background: var(--back1); position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 7px;}
+.felicsheet .feliscontent>div .csskills .csskill>i {color: var(--accent1); font-size: 17px;}
+.felicsheet .feliscontent>div .csskills .csskill>strong {color: var(--color2); font: 14px var(--font4); text-transform: lowercase; text-align: center; font-weight: 800; line-height: 100%; letter-spacing: 1px;}
+.felicsheet .feliscontent>div .csskills .csskill em {position: absolute; width: 100%; height: 100%; overflow: auto; border: 14px solid transparent; border-right: 7px solid transparent; text-align: justify; font: 12px var(--font1); opacity: 0; line-height: 110%; padding-right: 7px; color: var(--color1); background: var(--back1);}
+.felicsheet .feliscontent>div .csskills .csskill em>b {font-family: var(--font2); text-transform: uppercase; font-weight: 800; color: var(--accent1);}
+.felicsheet .feliscontent>div .csskills .csskill em>i {font-family: var(--font4); text-transform: lowercase; color: var(--color3); font-weight: 500;}
+.felicsheet .feliscontent>div .csskills .csskill em>u {font-family: var(--font5); color: var(--color4); text-decoration-color: var(--accent2); font-weight: 700;}
+.felicsheet .felisstats {position: relative; width: 100%; background: var(--accent1) url(https://i.imgur.com/ikLO6ub.png); background-blend-mode: multiply; background-position: 50% 50%; background-size: cover; background-attachment: fixed; height: 45px; display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; overflow: hidden; gap: 7px; padding: 7px; margin-bottom: -7px;}
+.felicsheet .felisstats>em {text-transform: uppercase; font: 10px var(--font3); font-weight: 700; letter-spacing: 2px; color: var(--color3); text-decoration: none; background: var(--back5); line-height: 100%; padding: 5px 7px;}
+.felicsheet .felisstats>em:before {margin-right: 7px; font-size: 12px; color: var(--accent2); font-family: "Font Awesome 6 Pro"; font-weight: 400;}
+.felicsheet .felisstats>em>i {color: var(--accent1); font: 12px var(--font4); font-weight: 800; font-style: normal;}
+.felicsheet .felisstats>em>i:after {content: "\f178"; margin: 0px 4px 0px 7px; color: var(--color4); font-family: "Font Awesome 6 Pro"; font-weight: 400;}
+.felicsheet .feliscontent>div .csskills .csskill:hover em {opacity: 1;}
