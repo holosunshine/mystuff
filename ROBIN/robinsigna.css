@@ -8,6 +8,7 @@
   --bordecorner: 1.4rem;
   --transition1: .7s;
   --gap1: .7rem;
+  --fuenteR: 'Panchang';
 }
 
 #robinsigna {
@@ -34,8 +35,8 @@
     content: '';
     position: absolute;
     z-index: -1;
-    height: 100%;
-    width: 100%;
+    height: calc(100% - (1px * 2));
+    width: calc(100% - (1px * 2));
     outline: var(--border2);
   }
   & b.rsigcorner {
@@ -74,7 +75,7 @@
     }
     &:is(.upp, .bott) {
       width: 0px;
-      height: .8px;
+      height: .85px;
     }
     &.izqi {
       right: calc((var(--bordewidth) * 0) - 1px);
@@ -84,7 +85,7 @@
     }
     &:is(.dere, .izqi) {
       height: 0px;
-      width: .8px;
+      width: .85px;
     }
   }
   & .rsig-imgcont {
@@ -134,7 +135,7 @@
       inset: 0;
       transition-delay: calc(var(--transition1) * 2);
       & b {
-        font: 900 var(--fs-body) 'Panchang';
+        font: 900 var(--fs-body) var(--fuenteR);
         line-height: 100%;
         text-transform: uppercase;
         text-align: right;
@@ -160,7 +161,7 @@
         z-index: 1;
       }
       & b {
-        font: 600 .75rem 'Panchang';
+        font: 600 .75rem var(--fuenteR);
         line-height: 140%;
         color: var(--group);
         text-transform: uppercase;
@@ -181,7 +182,7 @@
         }
         & u {
           text-underline-offset: 2px;
-          font-family: 'Panchang';
+          font-family: var(--fuenteR);
           font-weight: 600;
           color: var(--subtitle);
         }
