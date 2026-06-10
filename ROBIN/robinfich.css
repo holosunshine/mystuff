@@ -1,0 +1,226 @@
+.robin {
+  --group: #ae7065;
+  --group-80: rgb(from var(--group) r g b / 80%);
+  --group-60: rgb(from var(--group) r g b / 20%);
+  --group-40: rgb(from var(--group) r g b / 20%);
+  --group-20: rgb(from var(--group) r g b / 20%);
+  --bordewidth: .4rem;
+  --bordecorner: 1.4rem;
+  --transition1: .7s;
+  --gap1: .7rem;
+  --fuenteR: 'Panchang';
+}
+
+.post:has(.ficha.robin) {
+  & .postprofile {
+    display: none!important;
+  }
+}
+
+.ficha.robin {
+  & :where(b, strong, a) {
+    color: var(--group);
+  }
+  & .ficdatos {
+    & > span {
+      color: var(--group);
+    }
+  }
+  & .ficenv {
+    & .ficstats {
+      & > span {
+        & > i, & > em {
+          color: var(--group);
+        }
+      }
+    }
+  }
+  & .fichistoria {
+    justify-content: start;
+    gap: 2rem;
+    & br {
+      display: none!important;
+    }
+    & .fichdivider {
+      width: 70%;
+      height: 1px;
+      min-height: 1px;
+      background: radial-gradient(circle,rgba(from var(--group) r g b / 100%) 0%, rgba(0, 0, 0, 0) 100%)!important;
+    }
+    & .fichcont {
+      width: 100%;
+      column-rule: var(--border2);
+      display: inline-block;
+      & br {
+        display: inline!important;
+      }
+      &.fhctwo {
+        column-count: 2;
+        column-width: 17rem;
+        column-gap: calc(var(--gap) * 2);
+      }
+      &.fhcthree {
+        column-count: 3;
+        column-width: 12.5rem;
+        column-gap: calc(var(--gap) * 1.5);
+      }
+      & *:is(strong, b) {
+        text-transform: uppercase;
+        font-weight: 600!important;
+        font-family: 'Panchang';
+        color: var(--group);
+        font-size: var(--fs-tiny);
+      }
+      & *:is(i) {
+        text-transform: uppercase;
+        font-weight: 600!important;
+        font-family: var(--f-mono);
+        font-style: italic;
+        color: var(--subtitle);
+        letter-spacing: .5px;
+        font-size: var(--fs-small);
+      }
+      & *:is(em) {
+        color: var(--group);
+        vertical-align: -1px;
+      }
+      & *:is(strike, u) {
+        text-transform: uppercase;
+        text-decoration-thickness: 1px;
+        text-decoration-color: var(--group-80);
+      }
+      & *:is(u) {
+        text-underline-offset: 2px;
+        font-family: 'Panchang';
+        font-weight: 600;
+        color: var(--title);
+        font-size: var(--fs-tiny);
+      }
+      & *:is(strike) {
+        font-family: var(--f-mono);
+        font-weight: 600;
+        color: var(--text3);
+        letter-spacing: .5px;
+        font-size: var(--fs-small);
+      }
+    }
+    & .fichistitle {
+      text-align: justify;
+      text-align-last: center;
+      gap: var(--gap1);
+      position: relative;
+      z-index: 1;
+      & em {
+        color: var(--title);
+        font-size: var(--fs-h6);
+      }
+      & b {
+        text-transform: uppercase;
+        font: 500 var(--fs-h8) var(--fuenteR);
+        color: var(--group);
+        line-height: 100%;
+      }
+      & span {
+        text-transform: uppercase;
+        font: var(--fset-mono3);
+        color: var(--text2);
+        max-width: 100%;
+        width: clamp(10rem, 60%, 25rem);
+        & strong {
+          font-weight: 900;
+          color: var(--title);
+        }
+        & i {
+          font-style: italic;
+          font-weight: 700;
+          color: var(--subtitle);
+        }
+        & u {
+          text-underline-offset: 2px;
+          font-family: 'Panchang';
+          font-weight: 600;
+          color: var(--subtitle);
+        }
+        & strike {
+          font-weight: 600;
+          color: var(--text3);
+          letter-spacing: .5px;
+        }
+        & u, & strike {
+          text-decoration-thickness: 1px;
+          text-decoration-color: var(--group-80);
+        }
+      }
+      &:has(em) {
+        &:has(b, span) {
+          & em {
+            margin-bottom: calc(var(--gap1) / 1.5);
+            font-size: var(--fs-h5);
+          }
+        }
+        &:has(b):not(:has(span)) {
+          & em {
+            font-size: var(--fs-h6);
+          }
+          & b {
+            font-size: var(--fs-body);
+          }
+        }
+        &:has(span):not(:has(b)) {
+          & em {
+            color: var(--group);
+            font-size: var(--fs-h5);
+          }
+        }
+        &:not(:has(b, span)):has(em) {
+          &:before {
+            content: '';
+            position: absolute;
+            outline: var(--border2);
+            width: calc(var(--fs-h3) + (var(--gap1) * 2));
+            height: calc(var(--fs-h3) + (var(--gap1) * 2));
+            z-index: 1;
+          }
+          & em {
+            outline: var(--border2);
+            width: calc(var(--fs-h3) + (var(--gap1) * 2));
+            height: calc(var(--fs-h3) + (var(--gap1) * 2));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            position: relative;
+            border: var(--bordewidth) solid transparent;
+            z-index: 1;
+            corner-shape: notch;
+            border-radius: calc(var(--bordecorner) / 1.5);
+            box-sizing: content-box;
+          }
+        }
+      }
+      &:has(span):not(:has(em, b)) {
+        width: clamp(10rem, 70%, 50rem);
+        height: fit-content;
+        border: var(--bordewidth) solid transparent;
+        outline: var(--border2);
+        padding: calc(var(--gap1) * 1.5);
+        corner-shape: notch;
+        border-radius: calc(var(--bordecorner) / 1.5);
+        box-sizing: content-box;
+        &:before {
+          content: '';
+          position: absolute;
+          outline: var(--border2);
+          width: 100%;
+          height: 100%;
+          outline: var(--border2);
+          z-index: 1;
+        }
+        & span {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
