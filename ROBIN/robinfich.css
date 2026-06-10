@@ -23,14 +23,14 @@
   }
   & .ficdatos {
     & > span {
-      color: var(--group);
+      color: var(--group)!important;
     }
   }
   & .ficenv {
     & .ficstats {
       & > span {
         & > i, & > em {
-          color: var(--group);
+          color: var(--group)!important;
         }
       }
     }
