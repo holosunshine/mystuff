@@ -37,7 +37,7 @@
   }
   & .fichistoria {
     justify-content: start;
-    gap: 2rem;
+    gap: calc(var(--gap1) * 3);
     & br {
       display: none!important;
     }
