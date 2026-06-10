@@ -223,4 +223,51 @@
       }
     }
   }
+  & .ficotros {
+    & *:is(b) {
+      text-transform: uppercase;
+      font-weight: 600!important;
+      font-family: 'Panchang';
+      color: var(--group);
+      font-size: var(--fs-tiny);
+    }
+    & *:is(strong) {
+      text-transform: uppercase;
+      font-weight: 900!important;
+      color: var(--group);
+      font-size: var(--fs-small);
+    }
+    & *:is(i) {
+      text-transform: uppercase;
+      font-weight: 600!important;
+      font-family: var(--f-mono);
+      font-style: italic;
+      color: var(--subtitle);
+      letter-spacing: .5px;
+      font-size: var(--fs-small);
+    }
+    & *:is(em) {
+      color: var(--group);
+      vertical-align: -1px;
+    }
+    & *:is(strike, u) {
+      text-transform: uppercase;
+      text-decoration-thickness: 1px;
+      text-decoration-color: var(--group-80);
+    }
+    & *:is(u) {
+      text-underline-offset: 2px;
+      font-family: 'Panchang';
+      font-weight: 600;
+      color: var(--title);
+      font-size: var(--fs-tiny);
+    }
+    & *:is(strike) {
+      font-family: var(--f-mono);
+      font-weight: 600;
+      color: var(--text3);
+      letter-spacing: .5px;
+      font-size: var(--fs-small);
+    }
+  }
 }
