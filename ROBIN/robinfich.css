@@ -23,14 +23,14 @@
   }
   & .ficdatos {
     & > span {
-      color: var(--group)!important;
+      color: var(--group);
     }
   }
   & .ficenv {
     & .ficstats {
       & > span {
         & > i, & > em {
-          color: var(--group)!important;
+          color: var(--group);
         }
       }
     }
@@ -51,6 +51,7 @@
       width: 100%;
       column-rule: var(--border2);
       display: inline-block;
+      line-height: 160%;
       & br {
         display: inline!important;
       }
@@ -208,6 +209,8 @@
         corner-shape: notch;
         border-radius: calc(var(--bordecorner) / 1.5);
         box-sizing: content-box;
+        margin-top: 1px;
+        margin-bottom: 1px;
         &:before {
           content: '';
           position: absolute;
@@ -224,6 +227,7 @@
     }
   }
   & .ficotros {
+    line-height: 160%;
     & *:is(b) {
       text-transform: uppercase;
       font-weight: 600!important;
